@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <title> My Resume </title>
+    <link href="cv.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+
+    <table>
+
+      <thead>
+
+	<tr>
+	  <td> <img src="doll.jpg" alt="mypic" height="50px" width="50px" />
+	  <th> Qurat ul Ann </th>
+	</tr>
+
+	<tr>
+	  <th scope="row"> Address : </th>
+	  <td> House &hash; A-xxx, Block - &lsquo;J&rsquo;, North Nazimabad, Karachi. </td>
+	</tr>
+
+	<tr>
+	  <th scope="row"> Cell &hash; </th>
+	  <td> 0300 - 4209211 </td>
+	</tr>
+
+	<tr>
+	  <th scope="row"> Email : </th>
+	  <td> Abc.example@gmail.com </td>
+	</tr>
+
+      </thead>
+	  
+      <tbody>
+
+	<tr>
+	  <th colspan="2"> Experience </th>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> Abc Company </th>
+	  <th> Marketing Manager </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 2010 - Dec 2015 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th> Job Responsibilities </th>
+	</tr>
+
+	<tr>
+	  <td> <ul> 
+		<li> Advertising & Promotion </li>
+		<li> Client Dealing </li>
+		<li> Sales Call </li>
+	       </ul>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> Xyz Company </th>
+	  <th> Assistant Marketing Manager </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 2005 - Dec 2010 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th> Job Responsibilities </th>
+	</tr>
+
+	<tr>
+	  <td> <ul> 
+		<li> Advertising & Promotion </li>
+		<li> Client Dealing </li>
+		<li> Sales Call </li>
+	       </ul>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> Qrs Company </th>
+	  <th> Marketing Manager </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 2000 - Dec 2005 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th> Job Responsibilities </th>
+	</tr>
+
+	<tr>
+	  <td> <ul> 
+		<li> Advertising & Promotion </li>
+		<li> Client Dealing </li>
+		<li> Sales Call </li>
+	       </ul>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th colspan="2"> Education </th>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> MBA (Marketing) </th>
+	  <th> University of Karachi </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 1997 - Dec 2000 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th> Major Courses </th>
+	</tr>
+
+	<tr>
+	  <td> <ul> 
+		<li> Advertising & Promotion </li>
+		<li> Branding </li>
+		<li> Global Advertising </li>
+	       </ul>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> BBA (Marketing) </th>
+	  <th> University of Karachi </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 1993 - Dec 1996 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th> Electives : </th>
+	</tr>
+
+	<tr>
+	  <td> <ul> 
+		<li> Promotion Strategy </li>
+		<li> Consumer Behavior </li>
+		<li> Product Life Cycle </li>
+	       </ul>
+	  </td>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> H.S.C. </th>
+	  <th> St. Joseph's College </th>
+	</tr>
+
+	<tr>
+	  <td> Jan 1991 - Dec 1992 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th rowspan="8"> S.S.C. </th>
+	  <th> St. Lawrence's High School </th>
+	</tr>
+
+	<tr>
+	  <td> Batch : Dec 1990 </td>
+	</tr>
+
+	<tr>
+	  <td></td>
+	</tr>
+
+	<tr>
+	  <th colspan="2"> Personal Profile  </th>
+	</tr>
+
+	<tr>
+	  <th scope="row"> Father's Name : </th>
+	  <td> sadfhdfigj lijdrg </td>
+	</tr>
+
+	<tr>
+	  <th scope="row"> Religion : </th>
+	  <td> Islam </td>
+	</tr>
+
+	<tr>
+	  <th scope="row"> CNIC : </th>
+	  <td> xxxx-xxxxxx-x </td>
+	</tr>	
+
+      </tbody>
+
+      <tfoot>
+   
+	<tr>
+	  <td> Credentials will be furnished upon request. </td>
+	</tr>
+
+      </tfoot>
+
+    </table>
+
+  </body>
+</html>
+
+
+
