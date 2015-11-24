@@ -1,0 +1,250 @@
+<!doctype html>
+        <html>
+<head>
+    <title> Assignment lab 7 </title>
+</head>
+<body>
+<script>
+
+    // Ass4
+    /*
+    var array = ["Nokia", "Samsung", "huawei", "Ericson", "motorolla","HTC"];
+    for(var i = 0; i<array.length ; i++)
+    {
+        document.write(array[i] + "<br />");
+    }*/
+    // Ass5
+    /*var fruits = ["Apple", "Orange", "Strawberries", "Mango", "Banana"];
+    for(var i = 0; i<fruits.length ; i++)
+    {
+        document.write(fruits[i] + "<br />");
+    }
+    document.write("<br />");
+    for(var i = 0; i<fruits.length ; i++)
+    {
+        document.write("Fruit at index " + i + " is " + fruits[i] + "<br />");
+    }*/
+    // Ass 6
+    /*var items = [];
+    for(var i = 0;  ;i++)
+    {
+        items[i] = prompt("Enter an item");
+        if(items[i] === "undefined")
+        {
+            break;
+        }
+    }
+    document.write("Number of items: " + (--items.length) + "<br />");
+    for(var i = 0; i<items.length ; i++)
+    {
+        document.write(items[i] + "<br />");
+    }*/
+
+    //Ass 7
+    /*document.write("<br /> <h3> Counting: </h3>");
+    for(var i = 1; i <= 15; i++)
+    {
+        document.write(i + ", ");
+    }
+    document.write("<br /> <h3> Reverse Counting: </h3>");
+    for(var i = 10; i >= 1; i--)
+    {
+        document.write(i + ", ");
+    }
+    document.write("<br /> <h3> Even: </h3>");
+    for(var i = 0; i <= 20; i += 2)
+    {
+        document.write(i + ", ");
+    }
+    document.write("<br /> <h3> Odd: </h3>");
+    for(var i = 1; i <= 15; i++)
+    {
+        document.write(i + ", ");
+    }
+    document.write("<br /> <h3> Series: </h3>");
+    for(var i = 2; i <= 20; i++)
+    {
+        document.write(i + "k, ");
+    }*/
+
+    //Ass 8
+   /* var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var search = prompt("Welcome to Our Bakery! What would u like to have?");
+    var flag = 0;
+    var s = search.toLowerCase();
+    for(var i =0; i< A.length; i++)
+    {
+        if(s === A[i])
+        {
+            flag++;
+            break;
+        }
+    }
+    if(flag == 1)
+        {
+        document.write(search + " is available at index " + i + " of the bakery.");
+        }
+    else
+    {
+        document.write("We are sorry! " + search + " is not available in the bakery.");
+    }*/
+
+    //Ass 9
+    /*var A = [24, 53, 78, 91, 12];
+    var largest  = A[0];
+    for(var i = 0; i < A.length ; i++)
+    {
+        if(A[i] > largest)
+        {
+            largest = A[i];
+        }
+        /*else
+        {
+            largest = A[i++];
+        }*/
+    }
+    document.write(A);
+    document.write("The largest number is " + largest);*/
+
+// Ass 10
+
+/*var Array = [24, 53, 78, 91, 12];
+var small = Array[0];
+
+for(var i = 0; i < Array.length ; i++)
+{
+if(Array[i] < small)
+{
+small = Array[i];
+}
+}
+document.write(Array + "<br />");
+document.write("The smallest number in the array is " + small);
+*/
+//Ass 11
+/*
+var Array = [24, 53, 78, 91, 12];
+var small = Array[0];
+var large = Array[0];
+
+for(var i =0; i<Array.length; i++)
+if(Array[i] < small)
+small = Array[i];
+else
+if(Array[i] > large)
+large = Array[i];
+
+document.write(Array);
+document.write("<br /> The smallest value in the array is " + small); 
+document.write("<br /> The largest value in the array is " + large); 
+*/
+//Ass 12: multiples of 5
+/*
+for(var i = 5; i <= 100 ; i += 5)
+document.write(i + ", ");
+*/
+//Ass 13
+/*
+var students = ["Ali", "Sami", "Taha", "Inam"];
+var scores = [58, 73, 89, 90];
+
+document.write("<table border = 2> <tr> <th> Students </th> <th> Scores </th> </tr>");
+for(var i = 0; i<4 ; i++)
+document.write("<tr> <td>" + students[i] + "</td> <td>" + scores[i] + "</td> </tr>");
+document.write("</table>");
+*/
+
+//Ass 14
+/*
+var scores = [12, 45, 3, 22, 34, 50];
+var stop = prompt("Enter a value to stop at from : /n " + scores);
+
+stop = parseInt(stop);
+
+for(var i = 0; i<scores.length; i++)
+{
+if(stop === scores[i])
+{
+document.write(scores[i] + ", ");
+break;
+}
+else
+document.write(scores[i] + ", ");
+}
+*/
+//Ass 15
+/*
+var arr = [ [1,2,3] , [4,5,6] , [7,8,9] ];
+
+//document.write(arr[1][2]);
+
+for(var i = 0; i<arr.length ; i++)
+{
+document.write("<br />");
+for(var j = 0; j<arr[0].length; j++)
+{
+document.write(arr[i][j] + "  ");
+}
+}
+*/
+//Ass 16
+/*
+var num = prompt("Enter a number");
+
+for(var i = num; i>0 ; i -= 0.5)
+document.write(i + ", ");
+*/
+//Ass 17
+/*
+for(var i = 0; i <= 20; i++)
+if( i % 2 == 0)
+document.write(i + " is even <br />");
+*/
+//Ass 18
+/*
+var product = 1;
+for(var i=1; i<=7; i+=2)
+product *= i;
+document.write("the product of the odd integers from 1 to 7 is " + product);
+*/
+//Ass 19 stars
+/*
+var stars = prompt("How many stars do u want?");
+
+for(var i = stars; i >= 1; i--)
+{
+for(var j = i-1 ; j >= 1 ; j--)
+{
+document.write("*");
+}
+document.write("<br />");
+}
+*/
+//Ass 20a
+/*
+var stars = prompt("How many lines of stars do u want?");
+
+for(var i = stars; i >= 1; i--)
+{
+for(var j = 1 ; j <= stars ; j++)
+{
+document.write("*");
+}
+document.write("<br />");
+}
+*/
+//Ass 20b
+var stars = prompt("How many stars do u want?");
+
+for(var i = stars; i >= 1; i--)
+{
+for(var j = i ; j <= stars ; j++)
+{
+document.write("*");
+}
+document.write("<br />");
+}
+
+</script>
+</body>
+</html>
