@@ -1,0 +1,13 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Images </title>
+</head>
+
+<body>
+<h2> Height and Width of Images </h2>
+<img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" />
+It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. 
+</body>
+</html>
