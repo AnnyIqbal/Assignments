@@ -1,0 +1,16 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Images </title>
+</head>
+<body>
+	<h2> Alligning Images Vertically </h2>
+	<br />
+	 <p> <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is ban image of  chocolate islands" width=100 heigth=100 align="top"/>  Aligned top! Venice, Italy - The city of colorful winding corridoors and canals, and good food. </p>
+
+ 	<p> <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" width=100 heigth=100 align="middle"/> Aligned middle! It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+
+	<p> <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" width=100 heigth=100 align="bottom"/> Aligned Bottom! It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+</body>
+</html>
