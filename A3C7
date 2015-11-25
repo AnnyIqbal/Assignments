@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Yahoo Registeration </title>
+	</head>
+	<body background="file:///C:/Users/kashif/Desktop/Anny/HTML/Ch7/download.jpg">
+		<h1> My Web! </h1>
+		<h3> Sign up </h3>
+
+		<form action="http://www.google.com" method="post">
+			<select name="lang">
+				<option value="null"> Select Language </option>
+				<option value="English"> English </option>
+				<option value="Urdu"> Urdu </option>
+				<option value="French"> French </option>
+				<option value="Arabic"> Arabic </option>
+			</select>
+
+			<br /> <br />
+
+			<label for="fname"> First Name : </label>
+			<input type="text" id="fname" name="fname" placeholder="First Name" /> 
+			<label for="lname"> Last Name : </label>
+			<input type="text" id="lname" name="lname" placeholder="Last Name" /> 
+
+			<br /> <br />
+
+			<label for="email"> Email : </label>
+			<input type="email" id="email" name="email" placeholder="Username@yahoo.com" />
+
+			<br /> <br />
+
+			<label for="password"> Password : </label>
+			<input type="password" id="code" name="password" placeholder="Enter your Password" />
+
+			<br /> <br />
+
+			<label for="cell"> Cell No.: </label>
+			<select name="num">
+				<option value="pak" selected="selected"> +92 (Pakistan) </option>
+				<option value="uae"> +93 (UAE) </option>
+				<option value="usa"> +94 (USA) </option>
+				<option value="can"> +95 (Canada) </option>
+			</select>
+
+			<input type="text" id="cell" name="num" placeholder="mobile number" />
+			
+			<br /><br />
+
+			<label for="bdy"> Birthday : </label>
+			<input type="date" id="bdy" name="bdy" />
+
+			<br /><br />
+
+			Gender :
+			<input type="radio" id="female" name="gender" value="Female"  /> 
+			<label for="female"> Female </label>
+			<input type="radio" id="male" name="gender" value="Male" />
+			<label for="male">  Male </label>
+
+			<br /><br />
+
+			<label for="altcell">Optional Recovery : </label>
+			<select name="num">
+				<option value="pak" selected="selected"> +92 (Pakistan) </option>
+				<option value="uae"> +93 (UAE) </option>
+				<option value="usa"> +94 (USA) </option>
+				<option value="can"> +95 (Canada) </option>
+			</select>
+
+			<input type="text" id="altcell" name="num" placeholder="Optional Recovery Number" />
+			
+			<br /><br />
+
+			<label for="rel"> Relationship : </label>
+			<input type="text" id="rel" placeholder="Relationship" name="relationship" />
+
+			<br /><br />
+
+			<fieldset>
+				<legend> Security Question </legend>
+
+				<label for="dish"> Your Favourite Dish : </label>
+				<input type="checkbox" id="dish" name="pizza" value="Pizza" /> Pizza
+				<input type="checkbox" id="dish" name="tikka" value="Tikka" /> Tikka
+				<input type="checkbox" id="dish" name="rice" value="Rice" /> Rice
+				<input type="checkbox" id="dish" name="chinese" value="Chinese" /> Chinese
+			</fieldset>
+
+			<br /><br />
+
+			<label for="pic"> Upload Picture for  Identity : </label>
+			<input type="file" id="pic" name="picture" /> 
+			<br />
+			<input type="submit" id="pic" name="button" value="Upload" />
+
+			<br /><br />
+			
+			<input type="checkbox" id="agree" name="agree" />
+			<label for="agree"> I agree to the Yahoo Terms and Privacy </label>
+			
+			<br /><br />
+
+			<input type="image" src="file:///C:/Users/kashif/Desktop/Anny/HTML/Ch7/create%20account.jpg" alt="create account" height="50" width="150" />
+		</form>
+	</body>
+</html>
+	
