@@ -1,0 +1,27 @@
+body
+{
+font-family: Arial, verdana, sans-serif;
+}
+h1,h2
+{
+color: gray;
+text-transform:capitalize;
+}
+.white
+{
+color:white;
+background-color:rgb(149,198,238);
+text-transform:uppercase;
+}
+th
+{
+color:gray;
+}
+.whit
+{
+color:white;
+background-color:rgb(149,198,238);
+}
+table
+{
+border:
