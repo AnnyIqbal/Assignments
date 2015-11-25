@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title> Links </title>
+</head>
+
+<body>
+	<h1 id="top"> Linking to specific part of a page </h1>
+	<h2> Film-Making Terms </h2>
+	<a href="#ArcShot"> Arc Shot </a> <br />
+	<a href="#Interlude"> Interlude </a> <br />
+	<a href="#Prologue"> Prologue </a> <br />
+	<br />
+	<dd>
+	<dt id="ArcShot"> Arc Shot </dt>
+	<dd> A shot in which the subject is photographed by an encircling or moving cameras. A shot in which the subject is photographed by an encircling or moving cameras.A shot in which the subject is photographed by an encircling or moving cameras.A shot in which the subject is photographed by an encircling or moving cameras.A shot in which the subject is photographed by an encircling or moving cameras.A shot in which the subject is photographed by an encircling or moving cameras.</dd>
+	<dt id="Interlude"> Interlude </dt>
+	<dd> A brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a film. A brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a filmA brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a filmA brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a filmA brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a filmA brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a filmA brief, interveining film scene or sequence, not specifically tied to the plot, that appears within a film</dd>
+	<dt id="Prologue"> Prologue </dt>
+	<dd> sdgfdgfjkfghljfghklgfjklgh;jkghjsdgfdgfjkfghljfghklgfjklgh;jkghj  sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj sdgfdgfjkfghljfghklgfjklgh;jkghj  </dd>
+	<a href="#top"> Top </a>
+</body>
+
+</html>
