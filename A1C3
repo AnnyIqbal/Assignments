@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title> Assignment1 - Chapter3 </title>
+</head>
+<body>
+<ol>
+<li> Orange </li>
+<li> Banana </li>
+<li> Apple </li>
+<li> Peach </li>
+<li> Grapes </li>
+<li> Apricot </li>
+<li> Pear </li>
+<li> Mango </li>
+</ol> <br /> 
+<ul>
+<li> Apple </li>
+<li> Samsung </li>
+<li> HTC </li>
+<li> Nokia </li>
+<li> Black Berry </li>
+<li> Huawei </li>
+<li> Sony Ericson </li>
+</ul>
+</body>
+</html>
