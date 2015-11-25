@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Assignments-Forms-Part 1 </title>
+	</head>
+
+	<body>
+		<forms>
+			<label> Username : 
+			<input type="text" name="username" />
+			</label> <br /> <br />
+			
+			<label for="pw"> Password : </label>
+			<input type="password" id="pw" name="code" />
+			<br /><br />
+
+			<label for="dob"> Date of Birth : </label>
+			<input type="date" name="dateofbirth" id="dob" />
+			<br /><br />
+			
+			<label for="web"> Web URL : </label>
+			<input type="url" name="url" id="web" />
+			<br /><br />
+			
+			<label for="add"> Address : </label>
+			<input type="text" name="address" id="add" />
+			<br /><br />
+
+			<label for="city"> City : </label>
+			<select name="city" id="city">
+				<option value="Khi"> Karachi </option>
+				<option value="Lhr"> Lahore </option>
+				<option value="Isl"> Islamabad </option>
+				<option value="Mul"> Multan </option>
+				<option value="Pwr"> Peshawar </option>
+				<option value="Rwp"> Rawalpindi </option>
+			</select> <br /><br />
+
+			<label for="state"> State : </label>
+			<input type="text" name="state" id="state" />
+			<br /><br />
+
+			<label for="zip"> Zip : </label>
+			<input type="text" id="zip" name="zip" />
+			<br /><br />
+
+			<label for="mag"> Magazine : </label>
+			<select name="mag" id="mag" multiple="multiple" size="4">
+				<option value="times"> Times Magazine </option>
+				<option value="jang"> Jang Sunday Magazine </option>
+				<option value="bm"> Brands Magazine </option>
+				<option value="hmdrd"> Hamdard Magazine </option>
+				<option value="naunehal"> Hamdard Naunehal </option>
+				<option value="nwswk"> News Week Magazine </option>
+				<option value="fortune"> Fortune Magazine </option>
+				<option value="tv guide"> Tv Guide Magazine </option>
+				<option value="times"> Times Magazine </option>
+			</select> <br /><br />
+
+			<fieldset>
+				<legend> Contact Details </legend>
+
+				<label for="email"> Email : </label>
+				<input id="email" type="text" name="email" />
+				<br /><br />
+
+				<label for="mobile"> Mobile : </label>
+				<input id="mobile" type="text" name="number" />
+				<br /><br />
+
+				<label for="tphone">Telephone : </label>
+				<input type="text" id="tphone" name="tphone" />
+				<br />
+			</fieldset>	
+		</forms>
+	</body>
+</html>
