@@ -1,0 +1,28 @@
+<!doctype html>
+
+	<html>
+		<head>
+			<title> Thesaurus </title>
+
+		</head>
+
+		<body>
+
+			<h1> Thesaurus </h1>
+
+			<dl>
+			<dt><b>chemical formula </b></dt>
+			<dd> a representation of substance using symbols for its constituent elements </dd>
+			
+			<dt> <b>statement </b></dt>
+			<dd> a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc; <q> according to his statement he was in London on that day </q> </dd>
+			
+			<dt> <b>chemical notation</b> </dt>
+			<dd> a notation used by chemists to expresstechnical facts in chemistry </dd>
+			</dl>
+
+			<p> <cite> Based on WordNet 3.0, Farlex clipart collection. 2003-2012 Princeton University, Farlex Inc. </cite></p>
+		</body>
+
+
+	</html>
