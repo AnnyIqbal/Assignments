@@ -1,0 +1,23 @@
+<!doctype html>
+
+	<html>
+		<head>
+			<title> Technology </title>
+
+		</head>
+
+		<body>
+
+			<h1> HTML </h1>
+			HTML is a language for describing web pages. <hr />
+
+			<h1> CSS </h1>
+			CSS defines how to display HTML elements.<hr />
+
+			<h1> JS </h1>
+			JS programs the behavior of web pages.
+
+		</body>
+
+
+	</html>
