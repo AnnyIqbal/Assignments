@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<title> Links </title>
+</head>
+<body>
+<h1> LINKING TO OTHER PAGES ON THE SAME SITE </h1>
+<ul>
+<li><a href="file:///C:/Users/kashif/Desktop/Lab/31%20May%20Lab/A6C4.html"> Home </a> </li>
+<li><a href="file:///C:/Users/kashif/Desktop/Lab/31%20May%20Lab/A4C4.html"> Products </a></li>
+<li><a href="file:///C:/Users/kashif/Desktop/Lab/31%20May%20Lab/A3C4.html"> About Us </a></li>
+<li><a href="file:///C:/Users/kashif/Desktop/Lab/31%20May%20Lab/A5C4.html"> Contact Us </a></li>
+</ul>
+</body>
+</html>
