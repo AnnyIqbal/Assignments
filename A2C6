@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Tables </title>
+	</head>
+	
+	<body>
+
+		<table border="1" cellspacing="0" cellpadding="10">
+			<tr>
+			<th> </th>
+			<th scope="col"> 9 am </th> 
+			<th scope="col"> 10 am </th>
+			<th scope="col"> 11 am </th>
+			<th scope="col"> 12 am </th>
+			</tr>
+
+			<tr>
+			<th scope="row"> Monday </th>
+			<td colspan="2"> Geography </td>
+			<td> Math </td>
+			<td> Art </td>
+			</tr>
+			
+			<tr>
+			<th scope="row"> Tuesday </th>
+			<td colspan="3"> Gym </td>
+			<td> Home Ec </td>
+			</tr>
+			
+		</table> <br />
+
+		<table border="2">
+			<tr>
+			<th> </th>
+			<th scope="col"> ABC </th> 
+			<th scope="col"> BBC </th>
+			<th scope="col"> CNN </th>
+			</tr>
+
+			<tr>
+			<th scope="row"> 6pm - 7pm </th>
+			<td rowspan="2"> Movie </td>
+			<td> Comedy </td>
+			<td> News </td>
+			</tr>
+			
+			<tr>
+			<th scope="row"> 7pm - 8pm </th>
+			<td> Sport </td>
+			<td> Current Affairs </td>
+			</tr>	
+		</table>
+	</body>
+</html>
