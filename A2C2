@@ -1,0 +1,27 @@
+<!doctype html>
+
+	<html>
+		<head>
+			<title> Text </title>
+
+		</head>
+
+		<body>
+
+			<h1> Quotations: </h1>
+
+			<p> As William Shakespeare said, "<q> Cowards die many times before their deaths; the valiant never tastes death but once."</q> </p>
+			
+			<h1> Abbreviations & Accronyms: </h1>			
+
+			<p> <abbr title="Professor"> Prof </abbr> Stephen Hawking is a theoritical physicist and cosmologist. </p>
+			<p> <abbr title="Intelligence Sjhhh Ikjjf"> ISI </abbr> is at number 1 among top intelligence agencies.</p>
+
+			<h1> Citations & Definitions: </h1>	
+
+			<p> <cite> A Brief History of Time </cite> by Stephen Hawking has sold over ten million copies worldwide. </p>
+			<p> A <dfn> black hole </dfn> is a region of space from which nothing, not even light, can escape. </dfn></p>
+		</body>
+
+
+	</html>
