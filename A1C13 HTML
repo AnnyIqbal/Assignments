@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Boxes </title>
+    <link href="box.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img id="logo" src="6-sep (lab)\ch13_images\travelmate.gif" alt="logo" />
+    <ul>
+	<li> HOME </li>
+	<li> SERVICES </li>
+	<li> TOURS </li>
+	<li> ABOUT </li>
+	<li> CONTACT </li>
+    </ul>
+    <img id="pic" src="6-sep (lab)/ch13_images/tour.jpg" alt="Pic" />
+    <p> Travel &amp; Tourism Services since 1973 needs no foreword. It has indubitably tendered its clients with an outstanding one stop travel solution. It offers services for worldwide journeys, seasonal or occasional trips, hot spots for vacations, Umrah/Hajj packages and loads more of such travel treats with marvelous shots. </p>
+    <p id="quote"> The World is a book, and those who do not travel read only a page. <br /><span id="cap"> saint augustine </span></p>
+  </body>
+</html>
