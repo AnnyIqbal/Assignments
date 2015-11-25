@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Form Ass1 </title>
+	</head>
+	<body>
+		<form>	
+			Additional Comments : <br />
+			<textarea name="comments" cols="70" rows="8"> </textarea>
+		
+			<br /> <br /> Upload your Profile Picture :
+			<input type="file" value="Choose File" /> <br /> 
+			<input type="submit" value="Upload" /> <br /> <br /> <br />
+			<input type="submit" value="Send your Order" /> <br /> <br /> <br />
+
+			Email Address: 
+			<input type="text" required /> <br /><br />
+			
+			Subscription: 
+			<input type="radio" name="timeperiod" value="1year" checked="checked" /> 1 year
+			<input type="radio" name="timeperiod" value="2years" /> 2 years
+
+			<br /><br />			
+			<input type="checkbox" name="box" /> Yes! Put me on the list!!
+
+			<br /><br />
+			<input type="image" src="subscribe.jpg" alt="image button" width="100" height="50" />
+		</form>
+	</body>
+</html>
