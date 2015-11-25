@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head> 
+    <title> Chp 14 </title>
+    <link href="chp14.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+   <h1> Available Phones at ABC Store </h1>
+   <ol>
+      <li> Apple </li>
+	  <ul>
+		<li> iPhone 4 </li>
+		<li> iPhone 4S </li>	
+		<li> iPhone 5 </li>
+		<li> iPhone 5S </li>
+		<li> iPhone 6 </li>
+		<li> iPhone 6 Plus </li>
+	  </ul>
+      <li> Samsung </li>
+	  <ul>
+		<li> Galaxy S4 </li>
+		<li> Galaxy S5 </li>	
+		<li> Galaxy Note 3 </li>
+		<li> Galaxy Note 4 </li>
+	  </ul>
+      <li> Huawei </li>
+	  <ul>
+		<li> Honor 4X </li>
+		<li> Honor 6 </li>	
+		<li> Ascend Y550 </li>
+		<li> Ascend G700 </li>
+	  </ul>
+    </ol>
+  </body>
+</html>
