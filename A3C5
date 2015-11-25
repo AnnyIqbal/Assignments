@@ -1,0 +1,16 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Images </title>
+</head>
+
+<body>
+<h2> Where to place images in your code</h2>
+<img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" height="200" width= 200 /> 
+<p>It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+<p><img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" height="200" width= 200 />
+It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+<p>It is an amazing picture of cakes <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" height="200" width= 200 /> that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+</body>
+</html>
