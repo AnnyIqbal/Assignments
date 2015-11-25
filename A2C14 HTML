@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head> 
+    <title> chp14b </title>
+    <link href="chp14b.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1> skills development workshop </h1>
+    <p> We will conduct Skills Development workshops every tuesday. </p>
+    <table>
+      <tr>
+	<th></th>
+	<th> 9 am </th>
+	<th> 10 am </th>
+	<th> 11 am </th>
+	<th> 12 am </th>
+      </tr>
+      <tr>
+	<th scope="row"> Monday </th>
+	<td colspan="2"> Geography </td>
+	<td> Math </td>
+	<td> Art </td>
+      </tr>
+      <tr>
+	<th scope="row"> Tuesday </th>
+	<td colspan="3"> Skills Development Workshop </td>
+        <td> Home Ec </td>
+      </tr> 
+    </table>
+
+    <h2> program schedule </h2>
+    <table>
+      <tr>
+	<th></th>
+	<th> abc </th>
+	<th> bbc </th>
+	<th> cnn </th>
+      </tr>
+  
+    </table>
+  </body>
+</html>
