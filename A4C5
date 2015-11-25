@@ -1,0 +1,14 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Images </title>
+</head>
+<body>
+	<h2> Alligning Images Horizontally </h2>
+	<br />
+	 <p> <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is ban image of  chocolate islands" width=100 heigth=100 align="right"/>  Venice, Italy - The city of colorful winding corridoors and canals, and good food. The city of colorful winding corridoors and canals, and good food. The city of colorful winding corridoors and canals, and good food. </p>
+<br />
+ <p> <img src="images/chocolate-islands.jpg" alt="Chocolate Islands" title="It is an image of chocolate islands" width=100 heigth=100 align="left"/>It is an amazing picture of cakes that are mouthwatering, delicious and so exotic for our tastebuds. </p>
+</body>
+</html>
