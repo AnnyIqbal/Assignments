@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title> Extra Markup </title>
+</head>
+<body>
+<h1> IoBM - Contact Us </h1>
+<pre style="font-family:Times New Roman; font-size:16px">
+<b> 
+Location:	Korangi Creek, Karachi-75190, Pakistan
+U.A.N.:		(+92-21) 111-002-004
+Tel:			(+92-21) 3509-0961-67
+Fax:			(+92-21) 3509-0968
+Email:		<a href="mailto:iobm@iobm.edu.pk">iobm@iobm.edu.pk </a>
+</b>
+</pre>
+
+<iframe 
+src="http://www.ssuet.edu.pk/" 
+width="250" 
+height="300">
+</iframe>
+
+<!--
+<iframe
+src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed"
+width="450"
+height="350"
+frameborder="0"
+scrolling="no">
+</iframe>
+-->
+
+<p>&copy; 2014 Google - Map Data</p>
+</body>
+</html>
