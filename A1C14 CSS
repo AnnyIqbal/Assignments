@@ -1,0 +1,13 @@
+ul>li
+{
+list-style-image:url("6-sep (lab)/14/images/star.png");
+}
+ol>li
+{
+list-style-image: url("6-sep (lab)/14/images/icon-plus.png");
+}
+h1
+{
+font-family: Arial, verdana, sans-serif;
+color: gray;
+}
