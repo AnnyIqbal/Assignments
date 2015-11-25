@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title> Extra Markup </title>
+</head>
+<body>
+<h1> Currency Rates - December 19, 2014 </h1>
+<table cellpadding="10" cellspacing="0" border="1" style="text-align:center">
+<tr>
+<td> <b>Pakistani Rupee</b> </td>
+<td> <b>PKR 5000</b> </td>
+</tr>
+<tr>
+<td> <b>US Dollar</b> </td>
+<td> <b>$ 49.78</b></td>
+</tr>
+<tr>
+<td> <b>British Pound Sterling </b></td>
+<td> <b> &pound; 31.7870 </b></td>
+</tr>
+<tr>
+<td> <b>Euro </b></td>
+<td> <b> &euro; 40.5247 </b></td>
+</tr>
+<tr> 
+<td><b> Japanese Yen </b></td>
+<td> <b> &yen; 5917.24 </b></td>
+</tr>
+</table>
+</body>
+</html>
