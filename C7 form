@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Forms </title>
+	</head>
+
+	<body>
+		<form action="#" method="get">
+			Username :
+			<input type="text" name="username" size="15" maxlength="30" />		
+			<br /><br /> Password :
+			<input type="password" name="password" size="15" maxlength="30" />		
+			<br /> <br /> Give us your feedback!! <br />
+			<textarea name="comments" cols="100" rows="5"> Your Comments : </textarea>
+		</form>
+	</body>
+</html>
