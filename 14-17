@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lab 6</title>
+</head>
+<body>
+<script>/*
+ //Ass 1: literal notation
+    var students = [];
+ //Ass 2: object notation
+  var array1 = {
+                arr_item1:5,
+                arr_item2:""
+             };
+    students[0] = array1.arr_item1;
+    alert(students[0]);
+
+ //Ass 3: strings array
+    var strings = ["A","B","C"];
+ //Ass 4: numbers array
+    var num1 = [1,2,3,4,5];
+ //Ass 5: boolean array
+    var boo = [true, false,false,true];
+ //Ass 6: mixed array
+    var mix = [21, "java", true, 13];
+ //Ass 7:
+    var mobileNetworks = ["ufone", "mobilink", "warid", "telenor", "zong"];
+ //Ass 8:
+    var edu = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+ var num =1;
+ for(var index = 0; index <=7; index++)
+    {
+        document.write(num + ")" + edu[index] + "<br />");
+        num++;
+    }
+ //Ass 9: top movies
+    var topMovies2015 = [];
+
+    topMovies2015[0] = "Abc";
+    topMovies2015[1] = "Xyz";
+    topMovies2015[2] = "Pqr";
+    topMovies2015[3] = "Mno";
+
+    var list = 1;
+
+    for(var index = 0; index < topMovies2015.length; index++)
+    {
+        document.write(list + ")" + topMovies2015[index] + "<br />");
+        list++;
+    }
+    document.write("Length of the Array : " + topMovies2015.length); 
+
+ //Ass 10: cars
+
+    var cars = ["ford","vitz","santro","faw"];
+    document.write("<h1>Favorite Cars</h1> <br />");
+
+   for(var index = 0; index<cars.length; index++)
+     {
+         document.write(cars[index] + " , ");
+     }
+     document.write("<br /> First index of the Array : " + cars.indexOf("ford"));
+     document.write("<br /> Car at first index of the Array : " + cars[0]);
+     document.write("<br /> Last index of the Array : " + cars.indexOf("faw"));
+     document.write("<br /> Car at last index of the Array : " + cars[cars.length-1]);
+
+ //Ass 11:
+    students = ["Alina", "Bina", "Dua"];
+    var score = ["396", "469", "216"];
+    var percentage = [];
+ for(var index = 0; index < students.length; index++)
+ {
+     percentage[index] = (score[index]/500)*100;
+     document.write("<br /> Score of " + students[index] + " is " + score[index] + ". Percentage : " + percentage[index] + "%");
+ }
+
+ //Ass 12: colors
+    var colors = ["red", "green", "blue"];
+
+    for(var index = 0; index < colors.length; index++)
+    {
+        document.write(colors[index] +" ");
+    }
+
+    var firstElement = prompt("Which color do u wanna add on the first index of this array");
+    colors.unshift(firstElement);
+    document.write("<br />");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+
+     var lastElement = prompt("Which color do u wanna add on the last index of this array");
+     colors.push(lastElement);
+     document.write("<br />");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+    document.write("<br />");
+    colors.splice(0,0,"RED","BLUE");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+     colors.shift();
+     document.write("<br />");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+    colors.pop();
+     document.write("<br />");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+    var indexNumber = prompt("At which do u wanna insert a color");
+    colors.splice(indexNumber,0,"Light Pink");
+
+     document.write("<br />");
+     for(var index = 0; index < colors.length; index++)
+     {
+         document.write(colors[index] +" ");
+     }
+
+    var indNum = prompt("From which index do u wanna delete");
+    var count = prompt("How many items?");
+
+    colors.splice(indNum, count);
+
+ document.write("<br />");
+ for(var index = 0; index < colors.length; index++)
+ {
+     document.write(colors[index] +" ");
+ }
+ 
+
+ //Ass 13: Sort nhi hora :(
+    var score = [396, 469, 216, 12, 5, 0, -2334, 234, 9];
+
+   document.write("<h1> Scores of Students: </h1> <br />");
+
+     for(var index = 0; index < score.length; index++)
+     {
+         document.write(score[index] +"   ");
+     }
+   document.write(" <br />");
+        score.sort();
+     for(var index = 0; index < score.length; index++)
+     {
+         document.write(score[index] +"   ");
+     }
+     
+  //Ass 13: alternate way: ye strings ko sort nhi krta
+
+ var score = [396, 469, 216,496, 12, 05, 0, -2334, 234, 9];
+ document.write(score.sort());
+ 
+ //Ass 14: sorting strings
+ var fruits = ["strawberry", "apple", "banana", "orange"];
+ document.write("<h4> Unsorted Fruits List: </h4> <br />");
+
+ for(var index = 0; index < fruits.length; index++)
+ {
+     document.write(fruits[index] +"   ");
+ }
+ document.write("<h4> Sorted Fruits List: </h4> <br />");
+ fruits.sort();
+  <h4> Unsorted Fruits List: </h4> <br />
+
+
+ //Ass 15: slice method is used to copy elements of an array to a new array leaving the original unchanged
+
+    var cities = ["Karachi", "Lahore", "Multan", "Islamabad", "Quetta"];
+
+     for(var index = 0; index < cities.length; index++)
+     {
+         document.write(cities[index] +"   ");
+     }
+
+    var newCities = cities.slice(1,3);
+
+    document.write(" <br />");
+ for(var x = 0; x < newCities.length; x++)
+ {
+     document.write(newCities[x] +"   ");
+ }
+ 
+
+ //Ass 16: array join method
+
+ var arr = ["This", "is", "my", "cat"];
+ document.write("Array <br />");
+ document.write(arr);
+
+ document.write("<br /> Joined Array <br />");
+ document.write(arr.join("-"));
+
+// Ass 17
+
+var array = [];
+
+for(var i = 0; ; i++)
+{
+array[i] = prompt("Enter an item");
+if(array[i] === "")
+break;
+}
+
+document.write(array);
+
+for(var i = 0; i < array.length ; i++)
+{
+document.write("<br /> Out: <br /> " + array[i]);
+}
+
+
+//Ass 18
+
+var array = [];
+
+for(var i = 0; ; i++)
+{
+array[i] = prompt("Enter an item");
+if(array[i] === "")
+break;
+}
+
+document.write(array);
+
+for(var i = (array.length-2) ; i >= 0 ; i--)
+{
+document.write("<br /> Out: <br /> " + array[i]);
+}
+
+//Ass 19
+
+var phones = [Apple,Samsung, Motorola, Nokia, Sony, Haier];
+
+document.write("<select>");
+
+for(var i = 0; i < phones.length; i++)
+document.write("<option> " + phones[i] + "</option>");
+
+document.write("</select>");
+
+
+//Ass 20
+// var array = [[1,2,3],[2,3,4],[3,4,5],[4,5,6]];
+*/
+//Ass 21
+var arr = [[0, 1, 2], [1, 0, 1], [2, 1, 0], [3, 2, 1]];
+
+for(var i = 0; i <= 3; i++)
+{
+ for(var j = 0; j < 3; j++)
+{
+document.write(a[i][j] + "   ");
+}
+document.write("<br />");
+}
+
+
+
+</script>
+</body>
+</html>
