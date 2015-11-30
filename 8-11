@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Ass Chp 8-11: JS </title>
+</head>
+
+<body>
+
+<script>
+
+//Ass 1
+/*var name = prompt("Please enter your name");
+alert("Hi, " + name);*/
+ 	
+//Ass2
+/*var num = prompt("Enter a number",5);
+if(num!=5)
+{
+for(var i=1; i<=10; i++)
+{
+document.write(num + " x " + i + " = " + num*i + "<br />");
+}
+}
+else
+{
+for(var i=1; i<=10; i++)
+{
+document.write(5 + " x " + i + " = " + 5*i + "<br />");
+}
+}*/
+
+//Ass3
+/*var city = prompt("Please enter your city");
+if(city=="Karachi" || city=="karachi")
+{
+alert("Welcome to the city of lights!");
+}*/
+
+//Ass4
+/*var gender = prompt("Enter your gender");
+if(gender=="male" || gender=="Male")
+{
+document.write("Good Morning Sir");
+}
+else
+{
+document.write("Good Morning Ma'am");
+}*/
+
+//Ass5
+/*var signal = prompt("Enter color of traffic signal");
+if(signal=="red" || signal=="Red" || signal=="RED")
+{
+document.write("Vehicles must stop");
+}
+else if(signal=="yellow" || signal=="Yellow")
+{
+document.write("Vehicles should get ready to move");
+}
+else if(signal=="green" || signal=="Green")
+{
+document.write("Vehicles can move now");
+}*/
+
+//Ass6
+/*var maxAge = prompt("Enter maximum age");
+var currentAge = prompt("Enter your current age");
+if(currentAge<=maxAge)
+{
+document.write("You are welcome");
+}*/
+
+//Ass7
+/*var fuel = prompt("Remaining fuel in car (in litres)");
+if(fuel<0.25)
+{
+document.write("Please refill the fuel in your car");
+}*/
+
+//Ass8
+/* Displayed
+var a = 4;
+if (++a === 5)
+{
+alert("given condition for variable a is true");
+}*/
+
+/* Not displayed
+var b = 82;
+if (b++ === 83)
+{
+alert("given condition for variable b is true");
+}*/
+
+/* Condition 2,4 are true only
+var c = 12;
+if (c++ === 13)
+{
+alert("condition 1 is true");
+}
+if (c === 13)
+{
+alert("condition 2 is true");
+}
+if (++c < 14)
+{
+alert("condition 3 is true");
+}
+if(c === 14)
+{
+alert("condition 4 is true");
+}*/
+
+/*displayed
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost)
+{
+alert("The cost equals");
+}*/
+
+/*if True, block of code will be executed ; false wouldn't
+if(true)
+{
+alert("True");
+}
+if(false)
+{
+alert("False");
+}*/
+
+/*displayed bcoz r<t
+if("car" < "cat"){
+alert("car is smaller than cat");
+}*/
+
+//Ass9 :Marksheet
+/*var sub1 = prompt("Enter marks in subj 1");
+var sub2 = prompt("Enter marks in subj 2");
+var sub3 = prompt("Enter marks in subj 3");
+var totalMarks = 300;
+
+var marksObt = parseInt(sub1) + parseInt(sub2) + parseInt(sub3);
+var per = (marksObt/totalMarks)*100; 
+
+document.write("<h1> Marksheet </h1>");
+document.write("<br /> Total Marks:" + totalMarks);
+document.write("<br /> Marks Obtained: " + marksObt);
+document.write("<br /> Percentage: " + per);
+
+if(per>=80)
+{
+document.write("<br /> Grade: A-one");
+}
+else if(per >= 70 && per <= 79)
+{
+document.write("<br /> Grade: A");
+}
+else if(per >= 60 && per <= 69)
+{
+document.write("<br /> Grade: B");
+}
+else if(per < 60)
+{
+document.write("<br /> Grade: Fail");
+}
+ 
+if(per>=80)
+{
+document.write("<br /> Remarks: Excellent");
+}
+else if(per >= 70 && per <= 79)
+{
+document.write("<br /> Remarks: Good");
+}
+else if(per >= 60 && per <= 69)
+{
+document.write("<br /> Remarks: You need to improve");
+}
+else if(per < 60)
+{
+document.write("<br /> Remarks: Sorry");
+}*/
+
+//Ass10: Shopping Cart
+/*var item1 = prompt("Name the first item");
+var item2 = prompt("Name the second item");
+var price1 = prompt("Enter price of first item");
+var price2 = prompt("Enter price of second item");
+var qty1 = prompt("Enter quantity of first item");
+var qty2 = prompt("Enter quantity of second item");
+var shippingCharges = prompt("Enter shipping charges");
+
+totalCost = parseInt(shippingCharges) + (parseInt(price1)*parseInt(qty1)) + (parseInt(price2)*parseInt(qty2));
+
+document.write("<h1> Shopping Cart </h1>");
+document.write("<br /> Price of " + item1 + " is " + price1);
+document.write("<br /> Quantity of " + item1 + " is " + qty1);
+document.write("<br /> Price of " + item2 + " is " + price2);
+document.write("<br /> Quantity of " + item2 + " is " + qty2);
+document.write("<br /><br /> Shipping Charges :" + shippingCharges);
+document.write("<br /><br /> Total cost of your order is :" + totalCost + " PKR");
+
+if(totalCost>2000)
+{
+var discount = totalCost*(10/100);
+document.write("<br /> Discounted Price is :" + (totalCost-discount) + " PKR");
+}*/
+
+//Ass11: Bingo Game
+/*secretNum = 5;
+var guess = prompt("Guess the number");
+
+if(guess==secretNum)
+{
+document.write("Bingo! Correct answer");
+}
+else if(++guess==secretNum || --guess==++secretNum) 
+{
+document.write("Close enough to the correct answer");
+}*/
+
+//Ass12
+/*var numb = prompt("Enter a number");
+numb = parseInt(numb);
+if(numb%3 == 0)
+{
+alert("Number is divisible by 3");
+}*/
+
+//Ass13
+/*var team1 = prompt("Enter name of Team 1");
+var team2 = prompt("Enter name of Team 2");
+var score1 = prompt("Enter score of " + team1);
+var score2 = prompt("Enter score of " + team2);
+
+if(score1>score2)
+{
+document.write(team1 + " have won the game");
+}
+else if(score1<score2)
+{
+document.write(team2 + " have won the game");
+}
+else if(score1==score2)
+{
+document.write("There is a tie between " + team1 + " and " + team2);
+}*/
+
+//Ass14
+/*var str = "Hey";
+var num = 5.5;
+var boo = false;
+
+alert(str + " is a " + typeof str);
+alert(num + " is a " + typeof num);
+alert(boo + " is a " + typeof boo);*/
+
+//Ass 15
+/*var inp = prompt("Enter a number");
+if(inp%2 == 0)
+document.write("The number you entered is even");
+else
+document.write("The number you entered is odd");*/
+
+//Ass16
+/*
+var tem = prompt("Enter temperature in Karachi");
+if(tem>40)
+{
+document.write("It is too hot outside");
+}
+else if(tem>30 && tem<=40)
+{
+document.write("The Weather today is Normal");
+}
+else if(tem>20 && tem<=30)
+{
+document.write("Today’s Weather is cool");
+}
+else if(tem>10 && tem<=20)
+{
+document.write("OMG! Today’s weather is so Cool");
+}
+else
+{
+document.write("Ufff");
+}
+*/
+//Ass 17: calculator
+/*var num1 = prompt("Enter first operand");
+var num2 = prompt("Enter second operand");
+var operation = prompt("Enter operation (+,-,*,/,%)");
+
+switch(operation)
+{
+case "+":
+{
+var sum = parseInt(num1) + parseInt(num2);
+document.write(num1 + " + " + num2 + " = " + sum);
+break;
+}
+case "-":
+{
+var diff = parseInt(num1) - parseInt(num2);
+document.write(num1 + " - " + num2 + " = " + diff);
+break;
+}
+case "*":
+{
+var prod = parseInt(num1) * parseInt(num2);
+document.write(num1 + " * " + num2 + " = " + prod);
+break;
+}
+case "/":
+{
+var quot = parseInt(num1) / parseInt(num2);
+document.write(num1 + " / " + num2 + " = " + quot);
+break;
+}
+case "%":
+{
+var rem = parseInt(num1) % parseInt(num2);
+document.write(num1 + " % " + num2 + " = " + rem);
+break;
+}
+default:
+{
+document.write("Invalid operation");
+break;
+}
+}
+
+*/
+//Ass 18
+//Ass # 18
+
+/*var today = prompt("Which day is today?");
+
+if(today =="Sunday" || today =="sunday" || today =="SUNDAY")
+{
+document.write("Yay! It’s a holiday");
+}
+else if(today == "saturday")
+{
+document.write("It’s weekend");
+}
+else
+{
+document.write("It’s a week day");
+}*/
+
+//Ass 19
+
+/*var score = prompt("Enter your score");
+if(score > 50)
+{
+document.write("You are passed");
+}
+else
+{
+document.write("Try Again!");
+}*/
+
+//Ass 20
+
+/*var num1 = prompt("Enter first number");
+var num2 = prompt("Enter second  number");
+
+num1=parseInt(num1);
+num2=parseInt(num2);
+
+if(num1 == num2)
+{
+document.write(num1 + " and " + num2 + " are equal");
+}
+else if(num1 > num2)
+{
+document.write("The greater number of " + num1 + " and " + num2 + " is " + num1);
+}
+else 
+{
+document.write("The greater number of " + num1 + " and " + num2 + " is " + num2);
+}*/
+
+//Ass 21
+
+/*var code = prompt("Enter language code");
+
+if(code == "en")
+{
+alert("Hello World");
+}
+else if(code == "es")
+{
+alert("Tere, Maailm");
+}
+else if(code == "du")
+{
+alert("Hallo Wereld");
+}
+else if(code == "fr")
+{
+alert("Bonjour le monde");
+}
+else
+{
+alert("Invalid code!");
+}*/
+
+//Ass 22
+
+/*var num = prompt("Enter a number");
+
+num = parseInt(num);
+
+if(num>0)
+{
+document.write("Its a positive number");
+}
+else if(num<0)
+{
+document.write("Its a negative number");
+}*/
+
+//Ass 23: The Pluralizer
+
+var count = prompt("Enter a number");
+var noun = prompt("Enter a noun");
+
+count = parseInt(count);
+
+if(count > 1)
+{
+noun = noun + "s";
+}
+
+alert(count + " " + noun);
+*/
+
+</script>
+
+</body>
+</html>
