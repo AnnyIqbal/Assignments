@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Math Expressions Ch 5-7 </title>
+</head>
+<body>
+<!-- Ass # 01 -->
+
+<script>
+    var num1 = 13, num2 = 9,sum = num1 + num2;
+    alert("Sum of " + num1 + " and " + num2 + " is " + sum);
+</script>
+
+<!-- Ass # 02 -->
+
+<script>
+    var num1 = 13, num2 = 9,difference, product, quotient, remainder;
+    difference = num1 - num2;
+    product = num1 * num2;
+    quotient = num1 / num2;
+    remainder = num1 % num2;
+    alert("Result of Subtracting " + num2 + " from " + num1 + " is " + difference);
+    alert("Result of Multiplying " + num1 + " with " + num2 + " is " + product);
+    alert("Result of Dividing " + num1 + " by " + num2 + " is " + quotient);
+    alert("Remainder when " + num1 + " is divided by " + num2 + " is " + remainder);
+</script>
+
+<!-- Ass # 03 -->
+
+<script>
+    var x;
+    document.write("<br /> Value after variable declaration is : " + x);
+    x = 5;
+    document.write("<br /> Initial value of the variable is : " + x);
+    x++;
+    document.write("<br /> Value after increment is " + x);
+    x = x + 7;
+    document.write("<br /> Value after addition is " + x);
+    x--;
+    document.write("<br /> Value after decrement is " + x);
+    document.write("<br /> The remainder is " + x%5);
+</script>
+
+<!-- Ass # 04 -->
+
+<script>
+    var ticketPrice = 600;
+    document.write("<br /><br />Total cost to buy 5 tickets for a movie is " + ticketPrice*5 + " PKR. ");
+</script>
+
+<!-- Ass # 05 -->
+
+<script>
+    var num = 5, multiple;
+    for(var count = 1; count <= 10 ;count++)
+    {
+       multiple = num*count;
+       document.write("<br />" + num + " x " + count + " = " + multiple);
+    }
+</script>
+
+<!-- Ass # 06 -->
+
+<script>
+    var celcius = 12, fahrenheit;
+    fahrenheit = (celcius *9/5)+32;
+    document.write("<br />" + celcius + " <sup>o</sup>C is " + fahrenheit + " <sup>o</sup>F");
+
+    fahrenheit = 68;
+    celcius = (fahrenheit - 32)*5/9;
+    document.write("<br />" + fahrenheit + " <sup>o</sup>F is " + celcius + " <sup>o</sup>C");
+
+<!--Ass # 07 -->
+var P1 = 200, P2 = 500, Q1 = 5, Q2 = 10, shippingCharges = 150;
+//       document.write("<h1>Shopping Cart</h1>");
+//       document.write("<br /> Price of item 1 : " + P1);
+//       document.write("<br /> Price of item 2 : " + P2);
+//       document.write("<br /> Quantity of item 1 : " + Q1);
+//       document.write("<br /> Quantity of item 2 :" + Q2);
+//       document.write("<br /> Shipping Charges : " + shippingCharges);
+//        var totalCost = (P1 * Q1) + (P2 * Q2) + shippingCharges;
+//       document.write("<br /> Total cost of your order is : " + totalCost + " PKR.");
+
+       <!--Ass 8-->
+//       var totalMarks = prompt("Enter total marks");
+//       var marksObt = prompt("Enter marks obtained");
+//       var per = (marksObt / totalMarks) * 100;
+//       document.write("<h1>Marksheet</h1>")
+//       document.write("Total Marks : " + totalMarks + "<br />");
+//       document.write("Total Marks : " + marksObt + "<br />");
+//       document.write("Total Marks : " + per + "%<br />");
+
+       <!--Ass 9-->
+//         var usd = 10;
+//         var ryl = 25;
+//         var pkr = (usd * 104) + (ryl * 28);
+//         document.write("<h2>Currency in PKR</h2>");
+//         document.write("Total currency in PKR : " + pkr);
+
+       <!--Ass 10-->
+//       var num = 5;
+//       num = ((num + 5) * 10) / 2;
+//       alert(num);
+
+       <!--Ass 11 : The Age Calculator-->
+//       var currentYear = 2015, yearOfBirth = 1992;
+//       document.write("<h3>The Age Calculator</h3>");
+//       document.write("<br /> Current Year : " + currentYear);
+//       document.write("<br /> Year of Birth : " + yearOfBirth);
+//       document.write("<br /> You are " + (currentYear - yearOfBirth) + " years old.");
+
+
+// Ass 12: The Geometrizer
+/*
+var r = 12;
+var c = 2 * 3.142 * r;
+var a = 3.142 * r * r;
+
+document.write("<h1> The Geometrizer </h1>");
+document.write("<br /> Radius of a circle : " + r);
+document.write("<br /> The circumference is : " + c);
+document.write("<br /> The area is : " + a);
+*/
+//Ass 13
+/*
+var a = prompt("Enter a number");
+
+document.write("<h1>Result</h1>");
+document.write("<br /> The value of a is : " + a);
+document.write("<br /> ......................................................");
+
+a = parseInt(a);
+
+document.write("<br /> <br /> The value of ++a is : " + (++a));
+document.write("<br /> Now the value of a is : " + a);
+
+document.write("<br /> <br /> The value of a++ is : " + (a++));
+document.write("<br /> Now the value of a is : " + a);
+
+document.write("<br /> <br /> The value of --a is : " + (--a));
+document.write("<br /> Now the value of a is : " + a);
+
+document.write("<br /> <br /> The value of a-- is : " + (a--));
+document.write("<br />  Now the value of a is : " + a);
+*/
+
+// Ass 14
+/*
+var a = 2, b = 1;
+var result;
+
+document.write("<br /> a is : " + a); 
+document.write("<br /> b is : " + b);
+
+result = --a;
+document.write("<br /> result is : " + result);
+
+result = result - (--b) ;
+document.write("<br /> result is : " + result);
+
+result = result + (++b);
+document.write("<br /> result is : " + result);
+
+result = result + (b--);
+document.write("<br /> result is : " + result);
+*/
+
+// Ass 15 :The Lifetime Supply Calculator
+
+var s = "chips", ca = 15, ma = 85, a = 2, life;
+
+life = (ma - ca) * (a * 30 * 12);
+
+document.write("You will need" + life + s + " to last you until the ripe old age of " + ma);
+
+/* TEST Q
+var fn = ["ab", "cd", "ef"];
+var ln = ["uy", "xv", "zz"];
+var fulln = [];
+
+for (var i = 0; i < fn.length; i++) {
+  for (var j = 0; j < ln.length; j++) {
+    fulln.push(fn[i] + ln[j]);
+}}
+alert(fulln[2]);
+*/
+</script>
+</body>
+</html>
