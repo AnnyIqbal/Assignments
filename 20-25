@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> JS ASS CH 20-25 </title>
+</head>
+
+<body>
+
+<script>
+
+    // Ass 1
+    /*
+     var fname = prompt("Enter first name");
+     var lname = prompt("Enter last name");
+     var fullname = fname + " " + lname;
+
+     alert(fullname);
+     */
+
+    //Ass 2
+    /*
+     var favMobile = prompt("What is your favourite mobile");
+     var length = favMobile.length;
+
+     document.write("My favourite phone is " + favMobile);
+     document.write("<br /> The length of user input is " + length);
+     */
+
+    //Ass 3
+    /*
+     var string = "Pakistani";
+     var index = string.indexOf("n");
+
+     document.write("String : " + string);
+     document.write("<br /> Index of 'n': " + index);
+     */
+
+    //Ass 4
+    /*
+     var arr = "Hello World";
+     var index = arr.lastIndexOf("l");
+
+     document.write("String : " + arr);
+     document.write("<br /> Last Index of 'l' : " + index);
+     */
+
+    //Ass 5
+    /*
+     var string = "Pakistani";
+     var char = string.charAt(3);
+
+     document.write("String : " + string);
+     document.write("<br /> Character at index 3 : " + char);
+     */
+
+    //Ass 6
+    /*
+     var fname = prompt("Enter first name");
+     var lname = prompt("Enter last name");
+
+     var fullname = fname.concat(lname);
+
+     alert(fullname);
+     */
+
+    //Ass 7
+    /*
+     var city1 = "Hyderabad", city2;
+     city2 = city1.replace("Hyder","Islam");
+
+     document.write("City : " + city1);
+     document.write("<br /> After Replacement : " + city2);
+     */
+
+    //Ass 8
+    /*
+     var msg1 = "Ali and Sami are best friends. They play cricket and football together";
+     var msg2 = msg1.replace(/and/g,"&");
+     document.write(msg1);
+     document.write("<br /> After replacement: " + msg2);
+     */
+
+    //Ass 9
+    /*
+    var a = "472";
+    document.write("Value : " + a);
+    document.write("<br /> Type : " + typeof a);
+
+    a = parseInt(a);
+    document.write("<br /> Value : " + a);
+    document.write("<br /> Type : " + typeof a);
+    */
+
+    //Ass 10
+    /*
+    var url = prompt("Enter a URL : ");
+    var domain = url.slice(4,url.length);
+
+    document.write("URL : " + url);
+    document.write("<br /> Domain : " + domain);
+    */
+
+    //Ass 11
+    /*
+    var input = prompt("Input a sentence");
+    document.write("User Input : " + input);
+    document.write("<br /> Uppercase : " + input.toUpperCase());
+    */
+
+    //Ass 12
+    /*
+    var input = prompt("Input a sentence");
+    document.write("User Input : " + input);
+    document.write("<br /> Lowercase : " + input.toLowerCase());
+    */
+
+    //Ass 13
+    /*
+    var input = prompt("Input a sentence");
+    var fir = input.charAt(0);
+    var sec = input.slice(1,input.length);
+    document.write(fir.toUpperCase() + sec);
+    */
+
+//    var check = input.split(" ");
+//    console.log(check);
+//
+//    for(var i = 0 ; i < check.length; i++)
+//    {
+//        var first = check.slice(0,1);
+//        var second = check.slice(1);
+//        document.write(first + " " + second);
+//
+//        check[0] = first.toUpperCase();
+//        check[1] = second.toLowerCase();
+//        document.write(check);
+//    }
+
+//    for(var i = 0; i < input.length; i++)
+//        if(input.charAt(i) === " ")
+//        {
+//            j = i++;
+//            input.replace( input.charAt(i++),input.charAt(i++).toUpperCase());
+//            console.log("input:"+input);
+//
+//        }
+
+ // Ass 14
+/*
+var num = 35.36;
+var numStr = num.toString();
+
+var r = numStr.slice(0, 2) + numStr.slice(3, 5);
+
+document.write("Number: " + num);
+document.write("<br /> Result: " + r);
+*/
+
+//Ass 15
+/*
+var a = "3", b = "3";
+var x = a+b;
+document.write("a is " + a + "<br /> b is " + b + "<br /> a + b is " + x); 
+*/
+
+//Ass 16
+/*
+var a = "3", b = "3";
+var x = a-b;
+document.write("a is " + a + "<br /> b is " + b + "<br /> a - b is " + x); 
+*/
+
+//Ass 17
+/*
+var user = prompt("enter username");
+var found = 0;
+
+for(var i = 0; i < user.length; i++)
+{
+  if(user.charAt(i) === "@" || user.charAt(i) === "." || user.charAt(i) === "," || user.charAt(i) === "!")
+    found++;
+}
+
+if(found > 0)
+   document.write("Enter a valid username");
+else
+   document.write("Welcome " + user);
+*/
+
+//Ass 18
+/*
+var a = ["cake", "apple pie", "cookie", "chips", "patties"];
+var search = prompt("What would u like to have?");
+
+var s = search.toLowerCase();
+
+var index = 0, found = 0;
+
+for(var i = 0; i < a.length; i++)
+{
+  if(s === a[i])
+     {
+       found++;
+       index = i;
+       break;
+     }
+}
+
+if(found > 0)
+  document.write(search + " is available at index " + index + " of our bakery.");
+else
+  document.write("We're sorry. " + search + " is not available in our bakery.");
+*/
+
+//Ass 19
+/*
+var a = prompt("Enter a string");
+var b = prompt("Enter another string");
+
+if (a > b)
+  document.write(a + " is greater than " + b);
+else if ( a < b)
+  document.write(a + " is lesser than " + b);
+else
+  document.write(a + " is equals to " + b);
+*/
+
+//Ass 20
+/*
+var input = prompt("Enter password");
+var invalid = 0;
+
+  if(input.charAt(0) >= 48 || input.charAt(0) <= 57)
+  {
+    document.write("It should not start with a number");
+  }
+ 
+  else if(input.length < 6)
+  {
+    document.write("It must at least 6 characters long");
+  }
+  else
+  {
+     for(var i = 0; i < input.length; i++)
+     {
+        if((input.charAt(i) < 48) && (input.charAt(i) > 57 && input.charAt(i) < 65) && (input.charAt(i) > 90 && input.charAt(i) < 97) && (input.charAt(i) > 122))
+          {
+            document.write("It should contain alphabets and numbers only");
+            invalid++;
+            break;
+          }
+     }
+     if(invalid === 0)     
+     document.write("welcome");
+  }
+*/
+
+//aSS 21
+/*
+var uni = "University of Karachi";
+var arr = uni.split("");
+
+for( var i = 0; i < arr.length; i++)
+{
+  document.write(arr[i] + "<br />");
+}
+*/
+
+//ass 22
+/*
+var a = prompt("Input a text");
+document.write(a.charAt(a.length - 1));
+*/
+
+//ass 23
+/*
+var text = "The quick brown fox jumps over the lazy dog";
+var the = text.match(/the/gi);
+var count = the.length;
+
+document.write("TEXT: " + text);
+document.write(" <br /> There are " + count + " occurence(s) of word 'the'");
+*/
+
+//ass 24
+
+var st = "Pakistan";
+str = st.toLowerCase();
+var v=0,c=0;
+
+for(var i = 0; i < str.length; i++)
+{
+if(str.charAt(i) === "a" || str.charAt(i) === "e" || str.charAt(i) === "i" || str.charAt(i) === "o" || str.charAt(i) === "u")
+{
+v++;
+}
+else
+{
+c++;
+}
+}
+document.write("There are " + v + " vowels and "+c+" consonants in " + st);
+
+
+</script>
+
+</body>
+</html>
