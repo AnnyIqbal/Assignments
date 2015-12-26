@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> 26-34 JS Ass </title>
+</head>
+
+<body>
+
+<script>
+
+//ass 1
+/*
+var a = prompt("Enter a positive integer");
+
+document.write("number : " + a);
+document.write("<br /> round off value : " + Math.round(a));
+document.write("<br /> floor value : " + Math.floor(a));
+document.write("<br /> ceil value : " + Math.ceil(a));
+*/
+
+//ass 2
+/*
+var a = prompt("Enter a negative integer");
+
+document.write("number : " + a);
+document.write("<br /> round off value : " + Math.round(a));
+document.write("<br /> floor value : " + Math.floor(a));
+document.write("<br /> ceil value : " + Math.ceil(a));
+*/
+
+//ass 3
+/*
+var a = prompt("Enter a positive floating point number");
+
+document.write("number : " + a);
+document.write("<br /> round off value : " + Math.round(a));
+document.write("<br /> floor value : " + Math.floor(a));
+document.write("<br /> ceil value : " + Math.ceil(a));
+*/
+
+//ass 4
+/*
+var a = prompt("Enter a negative floating point number");
+
+document.write("number : " + a);
+document.write("<br /> round off value : " + Math.round(a));
+document.write("<br /> floor value : " + Math.floor(a));
+document.write("<br /> ceil value : " + Math.ceil(a));
+*/
+
+//ass 5
+/*
+var a = -5;
+document.write(Math.abs(a));
+*/
+
+//ass 6 dice
+/*
+var a = Math.random();
+a *= 6;
+var c = Math.ceil(a);
+
+document.write(a);
+document.write("<br />" + c);
+*/
+
+//ass 7 coin
+/*
+var a = Math.random();
+a *= 2;
+var c = Math.ceil(a);
+
+if(c===1)
+document.write("<br />" + c + " Heads");
+else if(c===2)
+document.write("<br />" + c + " Tails");
+*/
+
+//ass 8
+/*
+var b = Math.ceil(Math.random()*100);
+document.write("random # between 0 - 100 : " + b); 
+*/
+
+//ass 9 
+/*
+var a = prompt("Enter your weight");
+a = parseFloat(a);
+document.write(a + " Kgs");
+*/
+
+//ass 10
+/*
+var a = Math.ceil(Math.random()*10);
+var b = prompt("Enter a number from 1 to 10");
+
+if(b === a)
+alert("Congrats");
+else
+alert("Try Again");
+*/
+
+//ass 11
+
+//document.write(new Date());
+
+//ass 12
+/*
+var a = new Date();
+var b = a.getMonth();
+
+var arr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+document.write("Current Month : " + arr[b]);
+*/
+//ass 13
+/*
+var a = new Date();
+var b = a.getDay();
+
+var arr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+document.write("Today is " + arr[b]);
+*/
+
+//ass 14
+/*
+var a = new Date();
+var b = a.getDay();
+
+var arr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+if(arr[b] === "Sun" || arr[b] === "Sat")
+document.write("It's Fun day!");
+*/
+
+//ass 15
+/*
+var a = new Date();
+var b = a.getDate();
+
+if(b < 16)
+document.write("First fifteen days of the month");
+else
+document.write("Last fifteen days of the month");
+*/
+
+//ass 16
+/*
+var a = new Date();
+var b = a.getTime();
+
+document.write("Current Date : " + a);
+document.write("<br /> Elapsed milliseconds since Jan 1, 1970 : " + b);
+document.write("<br /> Elapsed minutes since Jan 1, 1970 : " + (b/1000/60));
+*/
+
+//ass 17
+/*
+var a = new Date();
+var b = a.getHours();
+
+if (b > 12)
+document.write("Its PM");
+else
+document.write("Its AM");
+*/
+
+//ass 18
+/*
+var laterDate = new Date("Dec 31, 2020");
+document.write("Later Date: " + laterDate);
+*/
+
+//ass 19
+/*
+var a = new Date("June 18, 2015");
+var b = new Date();
+
+var aMonth = a.getMonth();
+var bMonth = b.getMonth();
+var Month = bMonth - aMonth;
+
+var aDays = a.getDate();
+var bDays = b.getDate();
+var Days = bDays - aDays;
+
+var x = (Month * 30) + Days;
+document.write(x + " days have passed since 1st Ramadan, 2015");
+*/
+
+//ass 20
+/*
+var a = new Date("Jan 1, 2015");
+var b = new Date();
+
+var ahour = a.getHours();
+var bhour = b.getHours();
+
+var aMin = a.getMinutes();
+var bMin = b.getMinutes();
+
+var asec = a.getSeconds();
+var bsec = b.getSeconds();
+
+var d = ((bhour-ahour)*60*60) + ((bMin-aMin)*60) + (bsec-asec);
+document.write("On reference date " + b + ", " + d + " seconds had passed since beginning of 2015");
+*/
+
+//ass 21
+/*
+var a = new Date();
+document.write("Current date: " + a);
+
+a.setHours(a.getHours() - 1);
+document.write("<br /> 1 hour ago, it was " + a);
+*/
+
+//ass 22
+/*
+var a = new Date();
+document.write("Current date: " + a);
+
+a.setFullYear(a.getFullYear() - 100);
+document.write("<br /> 1 hour ago, it was " + a);
+*/
+
+//ass 23
+/*
+var age = prompt("Enter your age?");
+var today = new Date();
+var dob = today.getFullYear() - age;
+
+document.write("Your age is " + age);
+document.write("<br /> Your birth year is " + dob);
+*/
+
+//ass 24
+
+var name = prompt("Your Name?");
+var units = prompt("How many units have u used this month?");
+
+var charges = 14, pay = units * 14, surch = 500;
+
+var a = new Date();
+var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+document.write("<h1>K-Electric Bill </h1>");
+document.write("<br /> Customer Name: " + name);
+document.write("<br /> Month: " + month[a.getMonth()]);
+document.write("<br /> Number of units: " + units);
+document.write("<br /> Charges per unit: " + charges);
+document.write("<br /> <br /> Net amount payable (within due date): " +  pay);
+document.write("<br /> Late payment surcharge: " + surch);
+document.write("<br /> Gross amount payable (after due date): " + (pay + surch));
+
+</script>
+</body>
+</html>
