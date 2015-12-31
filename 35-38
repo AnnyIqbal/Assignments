@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+
+<head>
+<title> 35-38 part 2 </title>
+
+<script>
+
+function tellTime()
+{
+  var today = new Date();
+  var date = today.getDate();
+  var month = today.getMonth();
+
+  var arr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  var hour = today.getHours();
+  var min = today.getMinutes();
+
+  document.write("Date is " + arr[month] + ", " + date + " and time is " + hour + ":" + min);
+}
+
+function greet(fn,ln)
+{
+  document.write("Greetings! " + fn + " " + ln);
+}
+
+function sum()
+{
+  var num1 = prompt("Enter first number");
+  var num2 = prompt("Enter second number");
+
+  num1 = parseInt(num1);
+  num2 = parseInt(num2);
+
+  return num1+num2;
+}
+
+function calculator(n1,n2,op)
+{
+  switch(op)
+  {
+    case '+':
+    {
+      return n1+n2;
+      break;
+    }
+    case '-':
+    {
+      return n1-n2;
+      break;
+    }
+    case '*':
+    {
+      return n1*n2;
+      break;
+    }
+    case '/':
+    {
+      return n1/n2;
+      break;
+    }
+    default:
+      return "invalid operation";
+  }
+}
+
+function square(x)
+{
+  return x*x;
+}
+
+function factorial(x)
+{
+  var fact = x;
+  for(var i = 1; i < x; i++)
+   fact = fact * i;
+  return fact;
+}
+
+function counting()
+{
+  var n1 = prompt("where to start from?");
+  var n2 = prompt("where to end counting?");
+
+  n1 = parseInt(n1);
+  n2 = parseInt(n2);
+
+  for(var i = n1; i <= n2; i++)
+  {
+    document.write(i + "<br />"); 
+  }
+}
+
+function square(x)
+{
+  return x*x;
+}
+
+function hypotenuse()
+{
+  var b = prompt("Enter base");
+  var p = prompt("Enter perpendicular");
+
+  b = parseInt(b);
+  p = parseInt(p);
+
+  h = square(b) + square(p);
+  return h;
+}
+
+function largest(x,y,z)
+{
+  if (x>y && x>z)
+    document.write(x + " is the largest number");
+  else if (y>x && y>z)
+    document.write(y + " is the largest number");
+  else
+    document.write(z + " is the largest number");
+}
+
+function sort(a)
+{
+  var x = 0;
+  for(var i = 0; i < a.length; i++)
+  {
+    for(var j = i; j < a.length; j++)
+    {
+      if(a[i] < a[j])
+      {
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+      }
+    }
+  }
+    return a;
+}
+
+function area(x,y)
+{
+  return x*y;
+}
+
+function arrSum(x)
+{
+  var sum = 0;
+  for(var i = 0; i < x.length; i++)
+    sum += x[i];
+  return sum;
+}
+
+function power(x,y)
+{
+  var z = x;
+  for(var i = 1; i < y; i++)
+    z *= x;
+  return z;
+}
+
+function dice()
+{
+  var a = (Math.random()*6)+1;
+  return Math.floor(a);
+}
+
+function reverse(a)
+{
+  a = a.toString();
+  var s = a.charAt(a.length-1);
+  for(var i = (a.length - 2) ; i >= 0 ; i--)
+     s = s + a.charAt(i);
+  return s; 
+}
+
+function arg(v,w,x,y,z)
+{
+  console.log(arguments);
+}
+
+function palindrome(x)
+{
+  var p = true;
+  var l = x.length, m = (x.length-1);
+  if(l%2 === 0)
+    l = l/2;
+  else
+    {
+      l = l/2;
+      l = Math.floor(l);
+    }
+  for(var i = 0 ; i < l ; i++, m--)
+  {
+      if(x.charAt(i) == x.charAt(m))         
+      {
+        document.write("<br /> if " + i + m+ x.charAt(i) + x.charAt(m));
+      }
+      else //if(x.charAt(i) != x.charAt(m))
+      {
+        p = false;
+        document.write("<br /> else p" +p+ i + m+ x.charAt(i) + x.charAt(m));
+      }
+  }
+  if(p === true)
+    return "Its a palindrome";
+  else
+    return "Its not a palindrome";
+} 
+
+function sentenceCase(x)
+{
+  var string = 0;
+  var split = x.split(" ");
+  alert(split);
+  for(var i = 0; i < split.length; i++)
+  {
+    a = split[i].charAt(0);
+    a = a.toUpperCase(); 
+    b = split[i].slice(1);
+    string += (" " + a + b);
+  }
+return string.slice(1);
+}
+
+function longWord(x)
+{
+  x = x.split(" ");
+  var z = x[0];
+alert(x.length + x);
+  for(var i = 0 ; i < x.length ; i++)
+  {
+//    alert(x[i].length + x[i]);
+    j = ++i;
+//    alert(x[j].length + x[j]);
+
+    if(x[i].length > x[j].length)
+    {
+       z = x[i]; 
+    }
+    else
+    {   
+       z = x[j]; 
+    }
+  }
+  return z;
+}
+
+function vowels(x)
+{
+  x = x.toLowerCase();
+  alert(x);
+  var v = 0;
+  for (var i = 0; i < x.length; i++)
+  {
+    if(x.charAt(i) === 'a' || x.charAt(i) === 'e' || x.charAt(i) === 'i' || x.charAt(i) === 'o' || x.charAt(i) === 'u')
+      v++;
+  }
+  return v;
+}
+
+function type(x)
+{
+  return typeof x;
+}
+
+function extract(x)
+{
+  y = x.slice(0, 14) + x.slice(15, 17) + x.slice(18, 20) + x.slice(20, 21) + x.slice(22, 23) + x.slice(28, 33) + x.slice(34);
+  return y;
+}
+
+function occCount(x,y)
+{
+  var a = 0;
+  for (var i = 0; i < x.length; i++)
+  { 
+    if(x.charAt(i) === y)
+      a++;
+  }
+  return a;
+}
+
+function ageCalc(b,c)
+{
+var age1 = c - b;
+
+document.write ("<h1> The Age Calculator</h1>");
+document.write ("<br /> Birth Year: " +b);
+document.write ("<br /> Current Year: " +c);
+document.write ("<br /> <br /> you are " + age1+ " years old"); 
+}
+
+function calcSupply(age1,amount1)
+{
+var supply = amount1 * (age1 * 12 * 30);
+return supply;
+}
+
+function circumference(x)
+{
+return 2*x;
+}
+
+function area()
+{
+return 2*3.142*r;
+}
+
+</script>
+</head>
+
+<body>
+<script>
+
+//ass 1 & 2
+//tellTime();
+
+//ass 3
+/*
+var fname = prompt("Enter first name");
+var lname = prompt("Enter last name");
+greet(fname,lname);
+*/
+
+//ass 4
+//document.write(sum());
+
+//ass 5
+/*
+var num1 = prompt("Enter first number");
+var num2 = prompt("Enter second number");
+var operator = prompt("Enter operator");
+
+num1 = parseInt(num1);
+num2 = parseInt(num2);
+
+document.write(calculator(num1,num2,operator));
+*/
+
+//ass 6
+/*
+var n = prompt("Enter a number");
+n = parseInt(n);
+document.write(square(n));
+*/
+
+//ass 7
+/*
+var n = prompt("Enter a number");
+n = parseInt(n);
+document.write(factorial(n));
+*/
+
+//ass 8
+//counting();
+
+//ass 9
+//document.write("Hypotenuse <sup>2</sup> : " + hypotenuse());
+
+//ass 10 
+/*
+var a = 222;
+arg("Hi its Anny",2,true,a,3.44);
+*/
+
+//ass 11
+//largest(38,10,19);
+
+//ass 12
+/*
+var a = 4, b = 6;
+
+document.write(area(4,6));
+document.write(area(a,b));
+*/
+
+//ass 13: descending order sorting
+/*
+var z = [3,9,11,5,8,1];
+document.write(z);
+document.write("<br />" + sort(z));
+*/
+//ass 14
+/*
+var arr = [1,2,3,5,6,8,9,44,60];
+var z = arrSum(arr);
+
+document.write(arr);
+document.write("<br /> The sum is " + z);
+*/
+
+//ass 15: alert is "function"
+/*
+var param = function inner() 
+{ 
+  return typeof inner; 
+}
+alert(param()); 
+*/
+
+//ass 16
+/*
+var a = 2, b = 5;
+alert(a + "^" + b + " = " + power(a,b));
+*/
+
+//ass 17
+//alert(dice());
+
+//ass 18: reverse a number k lie number ko pehle string bna do then .charAt se uthwalo
+/*
+var str = 3456789; // "Anny is a good girl";
+document.write(str);
+document.write("<br />" + reverse(str));
+*/
+
+//ass 19 : palindrome
+/*
+var str = "madam";
+document.write(str);
+document.write("<br />" + palindrome(str));
+*/
+
+//ass 20
+/*
+var a = "i am a girl but sometimes behave like boys";
+document.write(a);
+document.write("<br />" + sentenceCase(a));
+*/
+
+//ass 21
+/*
+var text = 'Web Development Tutorial';
+document.write(text + "<br />");
+document.write(longWord(text));
+*/
+
+//ass 22
+//document.write(vowels("how many vowels are there in this text"));
+
+//ass 23
+//document.write(type(02));
+
+//ass 24
+/*
+var a = "thequickbrownfoxjumpsoverthelazydog";
+document.write(a);
+document.write("<br />" + extract(a));
+*/
+
+//ass 25
+//document.write(occCount("Hello how are you?", "e"));
+
+//ass 26
+/*
+var byr = prompt("Enter your birth year");
+var cyr = prompt("Enter current year");
+
+ageCalc(byr,cyr);
+ageCalc(1995,2015);
+ageCalc(1990,new Date().getFullYear());
+*/
+
+//ass 27
+/*
+var now_age = prompt("Your age?");
+var snack = prompt("What's your favorite snak?");
+var amount = prompt("How many packs of " + snack + " do you consume per day?");
+
+amount = Math.round(amount);
+var age = 75 - now_age;
+
+document.write("<h1>The Lifetime Supply Calculator</h1>");
+
+document.write("<br /> Favorite Snack: " +snack);
+document.write("<br /> Current Age: " +now_age);
+document.write("<br /> Estimated Maximum Age: 75");
+document.write("<br /> Amount of snacks per day: " +amount);
+
+var s = calcSupply(age,amount); 
+
+document.write("<br /><br /> You will need " + s + " " + snack + " to last you until the ripe old age of 85"); 
+*/
+
+//ass 28: geometrizer
+/*
+var r = 5;
+alert(circumference(r));
+alert(area(r));
+*/
+
+//ass 29: temperature converter
+//already done before
+
+</script>
+</body>
+</html>
