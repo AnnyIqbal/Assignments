@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> JS Ass Chp 39-44 </title>
+
+<script>
+
+function getDay()
+{
+  var today = new Date();
+  var weekday = today.getDay();
+  return weekday;
+}
+
+</script>
+</head>
+
+<body>
+<script>
+
+//ass 1 
+/*
+var age = prompt("your age");
+switch(age>18)
+{
+  case true:
+  {
+    document.write("Old enough!");
+    break;
+  }
+  case false:
+  {
+    document.write("Too young!");
+    break;
+  }
+  default:
+    document.write("Enter proper age?");
+}
+*/
+
+//ass 2
+/*
+var no = prompt("any number");
+switch((no%3) === 0)
+{
+  case true:
+  {
+    document.write("Divisible by 3!");
+    break;
+  }
+  case false:
+  {
+    document.write("Not divisible by 3!");
+    break;
+  }
+  default:
+    document.write("Enter a valid number");
+}
+*/
+
+//ass 3 : simple calculator (done many times b4)
+
+//ass 4 & 5
+/*
+switch(getDay())
+{
+  case 0:
+  {
+    document.write("Sunday");
+    break;
+  }
+  case 1:
+  {
+    document.write("Monday, default msg!");
+    break;
+  }
+  case 2:
+  {
+    document.write("Tuesday, default msg!");
+    break;
+  }
+  case 3:
+  {
+    document.write("Wednesday, default msg!");
+    break;
+  }
+  case 4:
+  {
+    document.write("Thursday, default msg!");
+    break;
+  }
+  case 5:
+  {
+    document.write("Friday, default msg!");
+    break;
+  }
+  case 6:
+  {
+    document.write("Saturday");
+    break;
+  }
+  default:
+    document.write("Invalid!");
+}
+*/
+
+//ass 6
+/*
+function checkCar() 
+{
+     var text;
+     var favCar = prompt("What is your favorite car?");     
+     switch(favCar) 
+     {
+       case "BMW":
+       {
+          text = "German car";
+          break;
+       }
+       case "Ford":
+       {
+          text = "American car";
+          break;
+       }
+       case "Peugeot":
+       {
+          text = "French car";
+          break;
+       }
+       default:
+           text = "Unknown car name";       
+     }
+     document.write(text);
+} 
+checkCar(); 
+*/
+
+//ass 7: switch st correct (done verbally)
+
+//ass 8
+/*
+function gradeMarks(x)
+{
+  switch(grade)
+  {
+    case 'A+':
+    {
+      document.write("A+ = 80% and above");
+      break;
+    }
+    case 'A':
+    {
+      document.write("A = 70% - 80%");
+      break;
+    }
+    case 'B':
+    {
+      document.write("B = 60% - 70%");
+      break;
+    }
+    case 'C':
+    {
+      document.write("C = 50% - 60%");
+      break;
+    }
+    default:
+    {
+      document.write("Invalid!");
+    }
+  }
+}
+ 
+var grade = prompt("Enter grade?");
+gradeMarks(grade);
+*/
+
+//ass 9: if 0 alert january using switch(done)
+
+//ass 10: ternary (conditional) operator
+/*
+var age = prompt("Your age");
+var text = (age<18) ? "Too young" : "Old enough";
+alert(text);
+*/
+
+//ass 11
+/*
+var i = 0;
+while(i<5)
+{
+  document.write("<br /> Hello World");
+  i++;
+}
+*/
+
+//ass 12
+/*
+var i = 1;
+do
+{
+  document.write(i + "<br />");
+  i++;
+} while(i<=10)
+*/
+
+//ass 13: multiplication table
+/*
+var number = prompt("Enter number");
+var length = prompt("how many times?");
+
+var i = 1;
+while(i<=length)
+{
+  document.write(number + " x " + i + " = " + (number*i) + "<br />");
+  i++;
+}
+*/
+
+//ass 14
+/*
+var a = ["Anny", "Zeeshan", "Sadaf", "Salman"];
+var i = 0;
+while(i < a.length)
+{
+  document.write(a[i] + "<br />");
+  i++;
+}
+*/
+
+//ass 15: similar to last one array
+
+//ass 16
+/*
+var n = prompt("Enter number of elements in array");
+var arr = [];
+var i = 0;
+while(i<n)
+{
+   arr[i] = prompt("Enter element at index " + i);
+   i++;
+}
+
+document.write("Number of elements : " + n + "<br /> Items : " + "<br />");
+
+var j = 0;
+while(j<n)
+{
+  document.write(arr[j] + "<br />");
+  j++;
+}
+*/
+
+//ass 17
+/*
+//counting
+var i = 1;
+document.write("<h3>Counting</h3>");
+do
+{
+  document.write(i + ", ");
+  i++;
+} while(i<=15);
+
+//reverse counting
+var j = 10;
+document.write("<h3>Reverse Counting</h3>");
+do
+{
+  document.write(j +", ");
+  j--;
+} while(j>=1)
+
+//even numbers
+var a = 0;
+document.write("<h3>Even</h3>");
+while(a<=20)
+{
+  document.write(a +", ");
+  a+=2;
+}  
+
+//odd
+var b = 1;
+document.write("<h3>Odd</h3>");
+while(b<=19)
+{
+  document.write(b +", ");
+  b+=2;
+}  
+
+//series
+
+var s = 2;
+document.write("<h3>Series</h3>");
+while(s<=20)
+{
+  document.write(s +"k, ");
+  s+=2;
+}  
+*/
+
+//ass 18
+/*
+var search = prompt("What would u like to have?");
+search = search.toLowerCase();
+
+var a = ["cake", "apple pie", "cookie", "chips", "patties"];
+var found = 0, index = 0;
+var i = 0;
+
+while(i<a.length)
+{
+  if(search === a[i])
+  {
+    found++;
+    index = i;
+  }
+  i++;
+}
+if(found != 0)
+  document.write(search + " is available at index " + index);
+else
+  document.write(search+" is not available");
+*/
+
+//ass 19
+/*
+var std = ["Ali", "Sami", "Taha", "Inam"];
+var score = [58, 73, 89, 90];
+
+document.write("<table cellspacing = 2 cellpadding = 5 border = 2> <tr> <th> Students </th> <th> Scores </th> </tr>");
+
+var i = 0;
+while(i<std.length)
+{
+  document.write("<tr> <td> " + std[i] + " </td> <td>" + score[i]+" </td> </tr>");
+  i++;
+}
+document.write("</table>");
+*/
+
+//ass 20
+/*
+var score = [58, 73, 89, 90, 1, 29, 35];
+var input = prompt("Where to stop?");
+
+var i = 0;
+do
+{
+  document.write(score[i] +", ");
+  i++;
+} while(score[i] != input);
+*/
+
+//ass 21
+/*
+var a = [[1,2,3],[4,5,6],[7,8,9]];
+
+var i = 0;
+while(i<3)
+{
+  var j = 0;
+  while(j<3)
+  {
+    document.write(a[i][j] + " ");
+    j++;
+  }
+  document.write("<br />");
+  i++;
+}
+*/
+
+//ass 22
+/*
+var num = prompt("Number");
+var i = num;
+do
+{
+  document.write(i +", ");
+  i-=0.5;
+} while(i>=0);
+*/
+
+//ass 23
+/*
+var i = 0;
+while(i<=20)
+{
+  if(i%2 == 0)
+  {
+    document.write(i+" is even <br />");
+  }
+  else
+  {
+    document.write(i+" is odd <br />");
+  }
+  i++;
+}
+*/
+
+//ass 24
+//document.write(7*6*5*4*3*2*1);
+
+//ass 25
+/*
+var num = prompt("Number");
+var i = num;
+do
+{
+    var j = 0;
+    do
+    {
+      document.write("*");
+      j++;
+    } while(j<i);
+    document.write("<br />");
+    i--;
+} while(i>0);
+*/
+
+//ass 26
+/*
+var i = 0;
+do
+{
+  var j = 0;
+  while(j<=7)
+  {
+    document.write("*");
+    j++;
+  }
+  document.write("<br />");
+  i++;
+} while(i<=7);
+*/
+/*
+var i = 0;
+do
+{
+  var j = 0;
+  while(j<=i)
+  {
+    document.write("*");
+    j++;
+  }
+  document.write("<br />");
+  i++;
+} while(i<=7);
+*/
+
+</script>
+</body>
+</html>
