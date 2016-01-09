@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title> Events: Link </title>
+
+    <script>
+        function greet()
+        {
+            var a = prompt("Your good name?");
+            alert("Hello, " + a);
+        }
+        function greetMe()
+        {
+            var a = prompt("Your good name?");
+            alert("Hello, " + a + "\n Length of user input : " + a.length);
+        }
+        function Msg()
+        {
+            alert("Thanks for purchasing this phone!");
+        }
+        function expand()
+        {
+            var more = "The first argument is merchTot. The second argument is the function calcTax, which is also passed merchTot."
+                    + "Within a function, you can call another function."
+                    + "function calcTot(price) {"
+                    + "return price + calcShip(price);"
+                    + "}";
+            document.getElementById('p').innerHTML += more;
+        }
+        function colorChange(x)
+        {
+            document.getElementById(x).style.backgroundColor = 'pink';
+        }
+        function saveData()
+        {
+	var nam = document.getElementById('name').value;
+	var rol = document.getElementById('roll').value;
+	var ema = document.getElementById('email').value;
+	var cou = document.getElementById('course').value;
+
+	if(nam === "" || rol === "" || ema === "")
+            alert("Please enter complete data");
+	
+	var x = "<tr> <td>" + nam + "</td>" +
+	            "<td>" + rol + "</td>" +
+		    "<td>" + ema + "</td>" +
+		    "<td>" + cou + "</td>" +
+		 "</tr>";
+	document.getElementById('j').innerHTML += x;
+	document.getElementById('name').value = '';
+	document.getElementById('roll').value = '';
+	document.getElementById('email').value = '';
+}
+	
+    </script>
+</head>
+<body>
+  <!-- Task 1
+  <a href = "JavaScript:void(0)" onClick = "alert('You clicked the right link');"> Save Now</a>
+  -->
+
+  <!-- Task 2
+  <input type = "button" value = "Save" onClick = "alert('You have clicked the right button');"/>
+  -->
+
+  <!-- Task 3
+  <a href = "JavaScript:void(0)" onClick = "greet();"> Greet Me </a>
+   -->
+
+  <!-- Task 4
+  <a href = "JavaScript:void(0)" onClick = "greetMe();">Greet Me</a>
+  -->
+
+  <!-- Task 5
+  <h1> Mobile Phone Lookup </h1>
+  <img src = "d.png" width = "500" height = "300" onClick = "Msg();" />
+  <img src = "d.png" width = "500" height = "300" onClick = "Msg();" />
+  <img src = "d.png" width = "500" height = "300" onClick = "Msg();" />
+  -->
+
+  <!-- Task 6a
+  <h1> Thomas Edison </h1>
+  <img src = "d.png" width = "200" height = "200" onMouseOver = "src = 'hi.png' " />
+  -->
+
+  <!-- Task 6b
+  <h1> Mobile Phone Lookup </h1>
+  <img src = "d.png" width = "200" height = "200" onMouseOver = "width = '300'; height = '300' " onMouseOut = " width = '200'; height = '200' "/>
+   -->
+
+  <!-- Task 7
+  <h1> Expansion of a paragraph </h1>
+  <p id = "p"> var tot = calc(merchTot, calcTax(merchTot));
+      <br />
+      In the example above, the calling code passes two arguments to the function calc.
+      <a href = "JavaScript:void(0)" onClick = "expand();"> See More </a>
+  </p>
+   -->
+
+  <!-- Task 8 -->
+  <form>
+      <fieldset>
+          <legend> Add Student </legend>
+          Student Name: <br />
+          <input type="text" id = "name" onClick = "colorChange('name');" />
+          <br /><br />
+          Roll No.: <br />
+          <input type="number" id = "roll" onClick = "colorChange('roll');" />
+          <br /><br />
+          Email ID: <br />
+          <input type = "email" id = 'email' required = "required" onClick = "colorChange('email');" />
+          <br /><br />
+          Course: <br />
+          <select id = "course" onClick = "colorChange('course');">
+              <option>Module A</option>
+              <option>Module B</option>
+          </select>
+          <br /><br />
+          <input type = "button" value = "Save" onClick = "saveData();" />
+      </fieldset>
+  </form>
+
+  <table border = "2" id = "j">
+      <tr>
+          <th colspan = "4" style = "background-color:yellow">Students Information</th>
+      </tr>
+      <tr>
+          <th width = "200">Name</th>
+          <th width = "200">Roll No.</th>
+          <th width = "200">Email</th>
+          <th width = "200">Course</th>
+      </tr>
+  </table>
+
+</body>
+</html>
