@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Assignments</title>
+    <style>
+        .colour
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body id = "bd">
+
+<!-- Task 1: About me
+
+<h1> About Me </h1>
+<ol id = 'listitems'>
+    <li>Nickname : <span id = "nickname"></span></li>
+    <li>Favourites : <span id = "favourites"></span></li>
+    <li>Hometown : <span id = "hometown"></span></li>
+</ol>
+<script>
+    document.getElementById('bd').style.fontFamily = "Arial", "Sans-serif";
+
+    document.getElementById('nickname').innerHTML = "Anny";
+    document.getElementById('favourites').innerHTML = "Red";
+    document.getElementById('hometown').innerHTML = "Karachi";
+
+    var x = document.getElementById('listitems');
+    for(var i = 0; i < 3; i++)
+    {
+        console.log(x);
+        x.getElementsByTagName('li')[i].className = 'colour';
+    }
+
+    var img = "<img src= '1.png' width = '20%' height = '20%'>";
+    document.getElementById('bd').innerHTML += img;
+
+-->
+
+<!-- Task 2 : Logo hijack done-->
+<!-- Task 3
+    <p id = "para"  onmouseover= 'colour();'>Hi!</p>
+    <script>
+        var x = "Hey how are you? <em> <span id = 'abc'>I'm Ok </span></em> What about you";
+        document.getElementById('para').innerHTML = x;
+       // document.getElementsByTagName('em')[0].style.color = "red";
+
+        function colour(){
+            document.getElementById('abc').style.color = "red";
+        }
+    </script>
+-->
+
+<!-- Task 4 
+
+
+<select id = "select" 
+    ><option> Name </option
+    ><option> Gender </option
+    ><option> Email </option
+    ><option> City </option
+></select>
+
+<input type = "button" value = "Count Items" onClick = "count();" />
+
+<script>
+
+function count()
+{
+var a = document.getElementById('select').childNodes;
+var l = a.length;
+alert("Number of items : " + l + "\n" + a[0].innerHTML + "\n" + a[1].innerHTML + "\n" + a[2].innerHTML + "\n" + a[3].innerHTML );
+}
+
+</script>
+-->
+
+<!-- Task 5 
+
+<input type = "button" value = "Create Table" onClick = "table();" />
+
+<script>
+
+function table()
+{
+  var r = prompt("Enter Number of Rows");
+  var c = prompt("Enter Number of Columns");
+
+  var t = "<table border = '1'>";
+
+  for(var i = 0; i < r; i++)
+  {
+     t += "<tr>";
+     for(var j = 0; j < c; j++)
+     {
+       t += "<td> Row : " + r + "Col : " + c + "</td>";
+     }
+     t += "</tr>";
+  }
+t += "</table>";
+document.write(t);
+}
+
+</script>
+-->
+
+<!-- Task 6 
+
+<p>
+<a id="myLink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.abc.com/">Visit ABC factory</a>
+</p>
+
+<button onClick="getAtt();"> Click here to get attributes value</button>
+
+<script>
+function getAtt()
+{
+var a = document.getElementById('myLink').attributes;
+alert("The value of the href attribute is : " + a[5].nodeValue);
+alert("The value of the type attribute is : " + a[1].nodeValue);
+alert("The value of the target attribute is : " + a[3].nodeValue);
+}
+</script>
+-->
+
+<!-- Task 7
+
+<button onClick = "Pcolor();"> Change Background Color </button>
+<p id = "change"> Set the back ground color of this paragraph! </p>
+
+<script>
+
+function Pcolor()
+{
+document.getElementById('change').style.backgroundColor = "yellow";
+}
+
+</script>
+-->
+
+<!-- Task 8 
+
+USD : <input type = "number" id = "usd" name = "USD" onInput = "conv('usd', 'pkr');" />
+<br /><br />
+PKR : <input type = "number" id = "pkr" name = "PKR" onInput = "conv('pkr', 'usd');" />
+
+<script>
+
+function conv(id1, id2)
+{
+var field2;
+var field1 = document.getElementById(id1).value;
+//alert(field1);
+if(id1 === "usd")
+field2 = (field1 * 105);
+else if(id1 === "pkr")
+field2 = (field1 / 105);
+//alert(field2);
+document.getElementById(id2).value = field2;
+}
+
+</script>
+-->
+
+<!-- Task 9 
+
+<hr />
+<img src= "rose.jpg" alt = "logo" width = "100 px" height = "50 px" />
+<a href = "JavaScript:void(0)" onClick = "home();">Home</a> 
+<a href = "JavaScript:void(0)" onClick = "products();">Products</a>
+<a href = "JavaScript:void(0)" onClick = "about();">About Us</a>
+<a href = "JavaScript:void(0)" onClick = "contact();">Contact Us</a>
+<hr />
+
+<div id = "container" border = "2px solid black"
+><h1> Home </h1
+><p> Home content goes here.</p>
+</div>
+<script>
+
+function home()
+{
+  var h = document.getElementById('container').childNodes[0];
+  h.innerHTML = "Home";
+
+  var p = document.getElementById('container').childNodes[1];
+  p.innerHTML = "Home content goes here.";
+}
+
+function products()
+{
+  var h = document.getElementById('container').childNodes[0];
+  h.innerHTML = "Products";
+
+  var p = document.getElementById('container').childNodes[1];
+  p.innerHTML = "We manufacture bla, bla, bla.... <br /> These are our products.";
+}
+
+function about()
+{
+  var h = document.getElementById('container').childNodes[0];
+  h.innerHTML = "About Us";
+
+  var p = document.getElementById('container').childNodes[1];
+  p.innerHTML = "We are a manufacturing company. We do this, this and that too.";
+}
+
+function contact()
+{
+  var h = document.getElementById('container').childNodes[0];
+  h.innerHTML = "Contact Us";
+
+  var p = document.getElementById('container').childNodes[1];
+  p.innerHTML = "<input type = 'text' name = 'user' /> <br /> <br /> <input type = 'email' name = 'email' /><br /><br /><input type = 'button' value = 'Send' />";
+}
+
+</script>
+-->
+
+</body>
+</html>
