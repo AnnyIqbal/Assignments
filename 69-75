@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Objects </title>
+</head>
+<body>
+<script>
+
+// Task 1
+/*
+var student = {
+          	name : "Anny",
+		class : "Module A",
+		age : 20
+	      };
+*/
+
+// Task 2
+/*
+var student = {
+          	name : "Anny",
+		class : "Module A",
+		age : 20
+	      };
+document.write(student.name + "<br />");
+document.write(student.class + "<br />");
+document.write(student.age + "<br />");
+*/
+
+// task 3
+/*
+var student = {
+          	First Name : "Anny",
+		Last Name : "Iqbal",
+		Age : 20,
+		ID : 7454,
+		Contact : 021345644,
+	      };
+*/
+
+//task 4
+/*
+var marxsht = {
+		Student_Name : “Zia Khan”,
+		Student_ID : "J30052425300",
+		Subject_HTML : 80,
+		Student_CSS : 90,	
+		Student_JAVASCRIPT : 90,
+		Student_BOOTSTRAP :  70,	
+		Total_Marks : 400
+	      };
+*/
+
+//task 5
+/*
+var std = {
+		Name :  "Rehan Uddin",
+		Age : 20
+	  }; 
+
+if(std.Age > 20)
+  document.write("Not eligible for Module A classes");
+else
+  document.write("Eligible");
+*/ 
+
+//task 6
+/*
+var Student_One = {
+		Student_Name : "Zia Khan",
+		Student_ID : "J30052425300",
+		Subject_HTML : 80,
+		Student_CSS : 90,
+		Student_JAVASCRIPT : 90,
+		Student_BOOTSTRAP :  70,
+		Total_Marks : 400
+		 };
+
+var Student_Two = {
+		Student_Name : "ShaZia Khan",
+		Student_ID : "J30052425300",
+		Subject_HTML : 60,
+		Student_CSS : 70,
+		Student_JAVASCRIPT : 65,
+		Student_BOOTSTRAP :  85,
+		Total_Marks : 400
+ 		  };
+
+var p1 = ((Student_One.Subject_HTML + Student_One.Student_CSS + Student_One.Student_JAVASCRIPT + Student_One.Student_BOOTSTRAP) / (Student_One.Total_Marks) )* 100;
+var p2 = (Student_Two.Subject_HTML + Student_Two.Student_CSS + Student_Two.Student_JAVASCRIPT + Student_Two.Student_BOOTSTRAP) / Student_Two.Total_Marks*100;
+
+alert("Percentage of std1 : " + p1);
+alert("Percentage of std2 : " + p2);
+
+if(p1>p2)
+  alert("Eligible for scholarship");
+*/
+
+//task 7
+/*
+var std = {
+            Name : prompt("Enter Name?"),
+            Age : prompt("Enter Age?"),
+            Address : prompt("Enter Address?")
+          };
+
+alert(std.Name);
+alert(std.Age);
+alert(std.Address);
+*/
+
+//task 8
+
+var m = {
+		Student_Name : prompt("Enter Name?"),
+		Student_ID : prompt("Enter ID?"),
+		Subject_HTML: prompt("Enter Marks in HTML?"),
+		Student_CSS : prompt("Enter Marks in CSS?"),
+		Student_JAVASCRIPT : prompt("Enter Marks in JAVASCRIPT?"),
+		Student_BOOTSTRAP :  prompt("Enter Marks in BOOTSTRAP?"),
+		//Total_Marks : parseInt(this.Subject_HTML) + parseInt(this.Student_CSS) + parseInt(this.Student_JAVASCRIPT) +parseInt(this.Student_BOOTSTRAP) 
+	};
+
+m.Total_Marks = parseInt(m.Subject_HTML) + parseInt(m.Student_CSS) + parseInt(m.Student_JAVASCRIPT) +parseInt(m.Student_BOOTSTRAP);
+
+alert(m.Total_Marks);
+
+</script>
+</body>
+</html>
