@@ -1,4 +1,4 @@
-3body
+body
 {
 border: 5px double black;
 margin: 1% 20% 3% 20%;
@@ -9,8 +9,8 @@ font-family: georgia, times, "times new roman", serif;
 ul li
 {
 display:inline;
-padding:15px;
-width:60%;
+padding: 15px 5px 15px 5px;
+width:40%;
 }
 ul li:hover
 {
@@ -40,6 +40,8 @@ width:100%;
 }
 #quote
 {
+margin-left:60px;
+width:300px;
 padding:20px;
 border: 2px solid rgb(190,190,190);
 }
