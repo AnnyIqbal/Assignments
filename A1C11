@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-08" />
+  <title> JENWARE </title>
+  <style>
+    body
+    {
+      background-color:rgb(219,234,224);
+      font-family:Helvetica, Arial, sans;
+      letter-spacing:0.5px;
+      word-spacing:1px;
+    }
+    #logo
+    {
+      width:50%;
+      height:50%;
+    }
+    span
+    {
+      color:grey;
+      font-weight:bold;
+    }
+    h1, #footer
+    {
+      color:rgb(128,128,255);
+    }
+    #purple
+    {
+      background-color:rgb(187,187,255);
+    }
+    #white
+    {
+      background-color:white;
+    }
+  </style>
+</head>
+<body>
+ <span>
+  <img src="images/logo.png" alt="logo" id="logo" />
+  JenWARE... Make It Personal
+ </span>
+  <p><b> Special occasions call for special gifts. The Jenware line of housewares and clothing can be personalized for the ones you love...
+the happy couple celebrating their new life together... the recent graduate... or a new baby.</b></p>
+  <div id="purple"><br />
+    <h1>Testimonials</h1>
+    <p>"The JenWARE onesies were the hit of the baby shower. The custom letter "a" and handmade quality made this gift really stand out among the cookiecutter
+clothes from the department store."
+"Thanks for the cool JenWARE barware. I couldn't wait until I found "Mr. Right," so I just bought a set for myself! My friends always want to know where I
+got them so I send them to your site."</p><br />
+  </div><br />
+  <div id="white">
+  <h1> GlassWARE </h1>
+  <img src="images/glasses.jpg" alt="Glasses" />
+  <p> <em> The perfect wedding gift. </em> Our highest quality glassware is sandblasted by hand with the alphabet/image of your choice. Choose from 26 letters and 24
+typefaces. Custom designs are also available for an additional design charge. Allow 4 to 6 weeks for delivery. </p>
+  <input type="button" value="Go to the GlassWARE page" />
+  <h1> BabyWARE </h1>
+  <img src="images/shirts.jpg" alt="Baby pic" />
+  <p><em>Tired of sickly-sweet?</em> These onesies with oversized letters in bold, bright patterns are a welcome change from the usual pastel fare. Monogrammed pants
+and baby shoes are also available. Tell us the initial and mix and match from 6 fun fabric patterns and 8 edging colors. Allow 2 to 4 weeks for delivery.
+Sizes: 3mos, 6mos, and 12mos. </p>
+  <input type="button" value="Go to the BabyWARE page" />
+  </div>
+  <p id="footer"> All content copyright © Jennifer Robbins and Jenware, Inc.</p>
+</body>
+</html>
