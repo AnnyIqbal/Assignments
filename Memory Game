@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> LETTER MATCHING PUZZLE </title>
+    <meta charset="UTF-8">
+    <title> LETTER MATCHING PUZZLE </title>
 </head>
 <body>
 <h1>MEMORY GAME</h1>
 <!-- DOM Assignment : Task 10 : LETTER MATCHING PUZZLE -->
 <table border="1" cellspacing="5" cellpadding="5">
-<tbody>
+    <tbody>
 
-<tr>
-<td onclick = "flip('0');">A</td>
-<td onclick = "flip('1');">S</td>
-<td onclick = "flip('2');">J</td>
-<td onclick = "flip('3');">Q</td>
-</tr>
+    <tr>
+        <td onclick = "flip('0');">A</td>
+        <td onclick = "flip('1');">S</td>
+        <td onclick = "flip('2');">J</td>
+        <td onclick = "flip('3');">Q</td>
+    </tr>
 
-<tr>
-<td onclick="flip('4');">W</td>
-<td onclick="flip('5');">P</td>
-<td onclick="flip('6');">S</td>
-<td onclick="flip('7');">L</td>
-</tr>
+    <tr>
+        <td onclick="flip('4');">W</td>
+        <td onclick="flip('5');">P</td>
+        <td onclick="flip('6');">S</td>
+        <td onclick="flip('7');">L</td>
+    </tr>
 
-<tr>
-<td onclick="flip('8');">W</td>
-<td onclick="flip('9');">A</td>
-<td onclick="flip('10');">L</td>
-<td onclick="flip('11');">Q</td>
-</tr>
+    <tr>
+        <td onclick="flip('8');">W</td>
+        <td onclick="flip('9');">A</td>
+        <td onclick="flip('10');">L</td>
+        <td onclick="flip('11');">Q</td>
+    </tr>
 
-<tr>
-<td onclick="flip('12');">P</td>
-<td onclick="flip('13');">X</td>
-<td onclick="flip('14');">X</td>
-<td onclick="flip('15');">J</td>
-</tr>
+    <tr>
+        <td onclick="flip('12');">P</td>
+        <td onclick="flip('13');">X</td>
+        <td onclick="flip('14');">X</td>
+        <td onclick="flip('15');">J</td>
+    </tr>
 
-</tbody>
+    </tbody>
 </table>
 
 <style scoped>
@@ -74,7 +75,7 @@
 
 <script>
     var cell = document.getElementsByTagName('td');
-    
+
     for (var i = 0; i < cell.length; i++)
     {
         cell[i].className = 'hide';
@@ -83,37 +84,49 @@
     var alpha = [], index = [];
     var a1, a2, c1, c2, cls, tile = 1;
 
-function flip(x) {
-    index.push(cell[x]);
-    alpha.push(cell[x].innerHTML);
-    cell[x].className = 'show';
-    var t1 = tile - 1;
-    var t2 = tile - 2;
-    if(tile%2 === 1)
-    {
-        c1 = index[t1];
-        a1 = alpha[t1];
-    }
-    if (tile%2 === 0)
-    {
-        c1 = index[t1];
-        a1 = alpha[t1];
-        c2 = index[t2];
-        a2 = alpha[t2];
-        cls = match(a1,a2);     //cls stores the value returned by match()
-        c1.className = cls;    //set className to cls' value
-        c2.className = cls;
-    }
-    tile++;
-}
+    function flip(x) {
+        index.push(cell[x]);
+        alpha.push(cell[x].innerHTML);
+        cell[x].className = 'show';
+        var t1 = tile - 1;
+        var t2 = tile - 2;
+        if(tile%2 === 1)
+        {
+            c1 = index[t1];
+            a1 = alpha[t1];
+        }
+        if (tile%2 === 0)
+        {
+            c1 = index[t1];
+            a1 = alpha[t1];
+            c2 = index[t2];
+            a2 = alpha[t2];
+            cls = match(a1,a2);     //cls stores the value returned by match()
+            if(cls == 'hide')
+            {
+                c1.className = 'show';    //first show the tile
+                c2.className = 'show';
+                setTimeout(function(){
+                    c1.className = cls;    //then after w8ng for 1 sec, hide it
+                    c2.className = cls;
+                }, 1000)
+            }
+            else
+            {
+                    c1.className = cls;    //set className to cls' value
+                    c2.className = cls;
+            }
 
-function match(a,b) {
-    alert("hi");    //ye na kren to 2nd flip show ni hota qk bht fast className = show se hide hojata hai
-    if(a === b)
-        return 'show';  //match is working if matched, className = show
-    else
-        return 'hide'; //if not matched, className = hide
-}
+        }
+        tile++;
+    }
+
+    function match(a,b) {
+          if(a === b)
+                return 'show';  //match is working if matched, className = show
+            else
+                return 'hide'; //if not matched, className = hide
+    }
 
 </script>
 
