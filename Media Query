@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practicing Media Queries</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"> &lt;!&ndash;To ensure proper rendering and touch zooming&ndash;&gt;-->
+    <style>
+        img
+        {
+            width:30px;
+            height:30px;
+            padding:0px;
+            float: left;
+        }
+        #body
+        {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .red ul{
+            list-style-type: none;
+            display: none;
+            text-align: left;
+        }
+        .red
+        {
+            background-color: transparent;
+            width:10px;
+            position: absolute; /* overlap over the other elements on page */
+            top:1%;
+            right:3.5%;
+        }
+        .box
+        {
+            width:250px;
+            height:250px;
+            color:whitesmoke;
+        }
+        .blue
+        {
+            background-color: blue;
+        }
+        .pink
+        {
+            background-color: deeppink;
+        }
+        .green
+        {
+            background-color: forestgreen;
+        }
+        .purple {
+            background-color: purple;
+        }
+        .yellow{
+            background-color: yellow; !important;
+        }
+        .wide {
+            width: 150px; !important;
+            background-color: red;
+            height:250px;
+            position: absolute; /* overlap over the other elements on page */
+            top:1.5%;
+            right:1.5%;
+        }
+        .wide ul {
+            text-align: left;
+            display: block;
+        }
+        .narrow {
+            width: 10px; !important;
+            height:250px;
+        }
+        @media screen and (max-width: 500px){    /* for small screens<500px, jb screen ziada se ziada 500px ki ho tb */
+            .pink, .purple {
+                width: 100%;
+            }
+            .green, .blue {
+                width:50%;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {     /* for medium sized screens 501-1000px */
+            .blue, .green, .pink, .purple {
+                width:25%;
+            }
+        }
+        @media screen and (min-width: 1000px) {     /* for larger devices 1000px and more */
+            #body {
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+    <script>
+        var click=1;
+
+        function showMenu()
+        {
+            if(click %2 === 0) //even clicks make it wider
+                document.getElementsByClassName("red")[0].className = "red narrow";
+            else if ((click %2 === 1)||(click===1)) //odd clicks make it narrow
+                document.getElementsByClassName("red")[0].className = "red wide";
+            click++;
+
+        }
+
+        function changeBk(x) {
+            document.getElementsByTagName("div")[x].style.backgroundColor = "yellow";
+        }
+
+    </script>
+</head>
+
+<body>
+<div id="body">
+    <div class="box purple" id="home">Home Page</div>
+    <div class="box blue" id="about"> About us</div>
+    <div class="box green" id="portfolio"> My Portfolio </div>
+    <div class="box pink" id="contact"> Contact me </div>
+    <div class="red" id="nav">
+        <img src="Images/menu-icon.svg" alt="Menu" onclick="showMenu();" />
+        <ul>
+            <li onclick="changeBk(1);"> <a href="#home"> Home </a></li>
+            <li onclick="changeBk(2);"> <a href="#about"> About </a></li>
+            <li onclick="changeBk(3);"> <a href="#portfolio"> Portfolio </a></li>
+            <li onclick="changeBk(4);"> <a href="#contact"> Contact </a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
